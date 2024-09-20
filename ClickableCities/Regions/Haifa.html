@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Haifa Region</title>
+
+    <!-- Bootstrap CSS -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../../mapcss/mapCss.css">
+
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                    <div class="links-wrap row">
+
+
+                        <div class="col-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <a href="#" onclick="window.location.href='../RegionsContent.html'; return false;" class="lf-to-rt">
+                                <i class="fa fa-long-arrow-left"></i>
+                            </a>
+                        </div>
+
+
+
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href=""  id="0" title="أبو زُرَيْق/ قرى الروحة"> <span>أبو زُرَيْق/ قرى الروحة</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#"  id="1" title="أم الزِينَاتْ/ قرى الروحة"> <span>أم الزِينَاتْ/ قرى الروحة</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#"  id="2" title="إعِبِِلّين/ عْبِِلَّيْن"> <span>إعِبِِلّين/ عْبِِلَّيْن</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#"  id="3" title="الشُوّنَة / قرى الروحة"> <span>الشُوّنَة / قرى الروحة</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#"  id="4" title="الغُبَيَة الفَوْقَا / قرى الروحة"> <span>الغُبَيَة الفَوْقَا / قرى الروحة</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#"  id="5" title="الكَفْرِيّن/ قرى الروحة"> <span>الكَفْرِيّن/ قرى الروحة</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#"  id="6" title="جَبَعْ"> <span>جَبَعْ</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#"  id="7" title="خربة الكساير"> <span>خربة الكساير</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#"  id="8" title="دالية الرَّوحاء/ قرى الروحة"> <span>دالية الرَّوحاء/ قرى الروحة</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#"  id="9" title="عرب الضمايرة"> <span>عرب الضمايرة</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#"  id="10" title="عرعرة"> <span>عرعرة</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href=""  id="11" title="عِسِفْيَا/ قرى الروحة"> <span>عِسِفْيَا/ قرى الروحة</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href=""  id="12" title="كبارة"> <span>كبارة</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href=""  id="13" title="كفر لام"> <span>كفر لام</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href=""  id="14" title="هوشة"> <span>هوشة</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href=""  id="15" title="أبو شُوْشَة/ قرى الروحة"> <span>أبو شُوْشَة/ قرى الروحة</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#"  id="16" title="أم الشُّوفْ/ قرى الروحة"> <span>أم الشُّوفْ/ قرى الروحة</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#"  id="17" title="أُم الفَحْم/ ألحقت بقرى حيفا منذ 1949"> <span>أُم الفَحْم/ ألحقت بقرى حيفا منذ 1949</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#"  id="18" title="البُطَيْمَاتْ/ قرى الروحة"> <span>البُطَيْمَاتْ/ قرى الروحة</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#"  id="19" title="السَنْديَانَة/ قرى الروحة"> <span>السَنْديَانَة/ قرى الروحة</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#"  id="20" title="الصرفند/ صرفند"> <span>الصرفند/ صرفند</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#"  id="21" title="الفُرَيْدِيس/ قرى الروحة"> <span>الفُرَيْدِيس/ قرى الروحة</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#"  id="22" title="المزار"> <span>المزار</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#"  id="23" title="بَرّة قِيسَارّيَة"> <span>بَرّة قِيسَارّيَة</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#"  id="24" title="بُرَيْكَة/ السِنْدِيَانَات/ قرى الروحة"> <span>بُرَيْكَة/ السِنْدِيَانَات/ قرى الروحة</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#"  id="25" title="خربة الدامون"> <span>خربة الدامون</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#"  id="26" title="شفا عمرو"> <span>شفا عمرو</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#"  id="27" title="صَنْدَلة/ ألحقت بقرى حيفا عام 1949"> <span>صَنْدَلة/ ألحقت بقرى حيفا عام 1949</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#"  id="28" title="عرب الفقراء / الشيخ حلو"> <span>عرب الفقراء / الشيخ حلو</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#"  id="29" title="عين حوض/ من قرى الهيجاء"> <span>عين حوض/ من قرى الهيجاء</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href=""  id="30" title="قَنِيِّر/ قرى الروحة"> <span>قَنِيِّر/ قرى الروحة</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href=""  id="31" title="وادي عارة"> <span>وادي عارة</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#"  id="32" title="الجلمة"> <span>الجلمة</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#"  id="33" title="الطَنْطُوْرَة"> <span>الطَنْطُوْرَة</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#"  id="34" title="باقة الغربية / مدينة حالية"> <span>باقة الغربية / مدينة حالية</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#"  id="35" title="خربة المنارة"> <span>خربة المنارة</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#"  id="36" title="خربة سعسع"> <span>خربة سعسع</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#"  id="37" title="خُبْيَّزَة / قرى الروحة"> <span>خُبْيَّزَة / قرى الروحة</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#"  id="38" title="طيرة حيفا/ طيرة الكرمل"> <span>طيرة حيفا/ طيرة الكرمل</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#"  id="39" title="عين غزال"> <span>عين غزال</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href=""  id="40" title="قِيَسارْيَة"> <span>قِيَسارْيَة</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href=""  id="41" title="وعرة السريس"> <span>وعرة السريس</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#"  id="42" title="أم العمد"> <span>أم العمد</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#"  id="43" title="إجْزِمْ/ قرى الروحة"> <span>إجْزِمْ/ قرى الروحة</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#"  id="44" title="بَلَد الشَيَّخْ"> <span>بَلَد الشَيَّخْ</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#"  id="45" title="خربة الشركس/ السركس"> <span>خربة الشركس/ السركس</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#"  id="46" title="خربة المنصورة"> <span>خربة المنصورة</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#"  id="47" title="خربة قمبازة"> <span>خربة قمبازة</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#"  id="48" title="صَبَّارِيْن/ قرى الروحة"> <span>صَبَّارِيْن/ قرى الروحة</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#"  id="49" title="عتليت"> <span>عتليت</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#"  id="50" title="عرب النفيعات"> <span>عرب النفيعات</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href=""  id="51" title="كفر قَرْع: زهرة المثلث/ قرى الروحة"> <span>كفر قَرْع: زهرة المثلث/ قرى الروحة</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="" id="52" title="مِصْمِصْ/ ألحقت بقرى حيفا منذ 1949/ قرى الروحة"> <span>مِصْمِصْ/ ألحقت بقرى حيفا منذ 1949/ قرى الروحة</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#" id="53" title="جت / جِتْ المثلث / من قرى الجليل الأعلى"> <span>جت / جِتْ المثلث / من قرى الجليل الأعلى</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#" id="54" title="كسرا/ كيسرا / كسرى / من قرى الجليل الأعلى"> <span>كسرا/ كيسرا / كسرى / من قرى الجليل الأعلى</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#" id="55" title="أبو الفضل/ السطري/ عرب أبو الفضل"> <span>أبو الفضل/ السطري/ عرب أبو الفضل</span></a>
+                        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+                        
+
+
+
+                        <!--No lat & lng on map and not available in pdf-->
+                        <!--div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#"  id="4" title="أم العلق وميامس/ قرى الروحة"> <span>أم العلق وميامس/ قرى الروحة</span></a>
+                        </div-->
+                        <!--div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#"  id="14" title="الحميرة"> <span>الحميرة</span></a>
+                        </div-->
+                        <!--div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#"  id="15" title="الخريبة"> <span>الخريبة</span></a>
+                        </div-->
+                        <!--div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#"  id="18" title="الزرغانية"> <span>الزرغانية</span></a>
+                        </div-->
+                        <!--div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#"  id="20" title="الشلالة"> <span>الشلالة</span></a>
+                        </div-->
+                        <!--div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href=""  id="33" title="مجزرة الطنطورة"> <span>مجزرة الطنطورة</span></a>
+                        </div-->
+                        <!--div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#"  id="29" title="الكعبية / عرب الكعبية"> <span>الكعبية / عرب الكعبية</span></a>
+                        </div-->
+                        <!--div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#"  id="35" title="الهريج"> <span>الهريج</span></a>
+                        </div-->
+                        <!--div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#"  id="50" title="جِدْرُو/ جِدْرُو الغوارنة"> <span>جِدْرُو/ جِدْرُو الغوارنة</span></a>
+                        </div-->
+                        <!--div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#"  id="54" title="خربة البُوَيّشَاتْ/ قرى الروحة"> <span>خربة البُوَيّشَاتْ/ قرى الروحة</span></a>
+                        </div-->
+                        <!--div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#"  id="62" title="خربة حديدون"> <span>خربة حديدون</span></a>
+                        </div-->
+                        <!--div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href=""  id="102" title="مجزرة طيرة حيفا الأولى/ مجزرة عائلة حجير"> <span>مجزرة طيرة حيفا الأولى/ مجزرة عائلة حجير</span></a>
+                        </div-->
+                        <!--div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href=""  id="103" title="مجزرة طيرة حيفا الثانية/ محرقة الطيرة"> <span>مجزرة طيرة حيفا الثانية/ محرقة الطيرة</span></a>
+                        </div-->
+
+
+
+                        <!--No lat & lng on map but available in pdf-->
+                        <!--div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#"  id="1" title="أم التوت/ قرى الروحة"> <span>أم التوت/ قرى الروحة</span></a>
+                        </div-->
+                        <!--div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#"  id="13" title="الحارثية"> <span>الحارثية</span></a>
+                        </div-->
+                        <!--div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#"  id="38" title="بيت لحم"> <span>بيت لحم</span></a>
+                        </div-->
+                        <!--div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#"  id="84" title="عرب المفجر"> <span>عرب المفجر</span></a>
+                        </div-->
+                        <!--div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href=""  id="44" title="مجزرة بلد الشيخ/ مجزرة حَوَّاسة"> <span>مجزرة بلد الشيخ/ مجزرة حَوَّاسة</span></a>
+                        </div-->
+
+
+
+                        <!--Available on map but not in pdf-->
+                        <!--div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href=""  id="6" title="أم القطف/ أم القطوف"> <span>أم القطف/ أم القطوف</span></a>
+                        </div-->
+                        <!--div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href=""  id="1" title="أم الدفوف/ قرى الروحة"> <span>أم الدفوف/ قرى الروحة</span></a>
+                        </div-->
+                        <!--div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href=""  id="8" title="إبطن"> <span>إبطن</span></a>
+                        </div-->
+                        <!--div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href=""  id="16" title="الدار البيضاء"> <span>الدار البيضاء</span></a>
+                        </div-->
+                        <!--div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href=""  id="17" title="الرِّيحَانِيَّة/ قرى الروحة"> <span>الرِّيحَانِيَّة/ قرى الروحة</span></a>
+                        </div-->
+                        <!--div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href=""  id="21" title="الشيخ بريك، إبريك، إبريق"> <span>الشيخ بريك، إبريك، إبريق</span></a>
+                        </div-->
+                        <!--div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href=""  id="25" title="الغُبَيَة التَحْتَا / قرى الروحة"> <span>الغُبَيَة التَحْتَا / قرى الروحة</span></a>
+                        </div-->
+                        <!--div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href=""  id="28" title="الكبابير"> <span>الكبابير</span></a>
+                        </div-->
+                        <!--div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href=""  id="32" title="المَرَاحْ/ قرى الروحة"> <span>المَرَاحْ/ قرى الروحة</span></a>
+                        </div-->
+                        <!--div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href=""  id="33" title="المَنْسي/ عرب بنيها/ قرى الروحة"> <span>المَنْسي/ عرب بنيها/ قرى الروحة</span></a>
+                        </div-->
+                        <!--div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href=""  id="34" title="النَغْنَغِيَّة/ قرى الروحة"> <span>النَغْنَغِيَّة/ قرى الروحة</span></a>
+                        </div-->
+                        <!--div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href=""  id="37" title="بسمة طبعون"> <span>بسمة طبعون</span></a>
+                        </div-->
+                        <!--div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href=""  id="40" title="بَرْطَعَة الغَرْبِيَّة"> <span>بَرْطَعَة الغَرْبِيَّة</span></a>
+                        </div-->
+                        <!--div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href=""  id="42" title="بَيَّاضَة/ ألحقت بقرى حيفا عام 1949/ قرى الروحة"> <span>بَيَّاضَة/ ألحقت بقرى حيفا عام 1949/ قرى الروحة</span></a>
+                        </div-->
+                        <!--div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href=""  id="44" title="تجمع حَوَّاسَة/ بلد الشيخ"> <span>تجمع حَوَّاسَة/ بلد الشيخ</span></a>
+                        </div-->
+                        <!--div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href=""  id="45" title="تل الشمام/ خربة دبّاشَة"> <span>تل الشمام/ خربة دبّاشَة</span></a>
+                        </div-->
+                        <!--div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href=""  id="46" title="جسر الزرقاء"> <span>جسر الزرقاء</span></a>
+                        </div-->
+                        <!--div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href=""  id="47" title="جعارة/ قرى الروحة"> <span>جعارة/ قرى الروحة</span></a>
+                        </div-->
+                        <!--div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href=""  id="48" title="جيدا"> <span>جيدا</span></a>
+                        </div-->
+                        <!--div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href=""  id="51" title="حجاجرة"> <span>حجاجرة</span></a>
+                        </div-->
+                        <!--div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href=""  id="52" title="حي التَنَّك/ بوابة فقراء عكا"> <span>حي التَنَّك/ بوابة فقراء عكا</span></a>
+                        </div-->
+                        <!--div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href=""  id="53" title="خربة البُرْج/ قرى الروحة"> <span>خربة البُرْج/ قرى الروحة</span></a>
+                        </div-->
+                        <!--div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href=""  id="56" title="خربة السَوامِيْر/ السَوامِيْر- تتبع لقرية عين غزال"> <span>خربة السَوامِيْر/ السَوامِيْر- تتبع لقرية عين غزال</span></a>
+                        </div-->
+                        <!--div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href=""  id="59" title="خربة الماقورة"> <span>خربة الماقورة</span></a>
+                        </div-->
+                        <!--div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href=""  id="63" title="خربة رأس علي"> <span>خربة رأس علي</span></a>
+                        </div-->
+                        <!--div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href=""  id="66" title="خربة لد/ لد العوادين"> <span>خربة لد/ لد العوادين</span></a>
+                        </div-->
+                        <!--div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href=""  id="67" title="خوالد"> <span>خوالد</span></a>
+                        </div-->
+                        <!--div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href=""  id="69" title="دار الحنون"> <span>دار الحنون</span></a>
+                        </div-->
+                        <!--div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href=""  id="71" title="دالية الكرمل"> <span>دالية الكرمل</span></a>
+                        </div-->
+                        <!--div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href=""  id="72" title="زَلْفَة/ ألحقت بقرى حيفا عام 1949"> <span>زَلْفَة/ ألحقت بقرى حيفا عام 1949</span></a>
+                        </div-->
+                        <!--div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href=""  id="73" title="زَمَّاريّن/ قرى الروحة"> <span>زَمَّاريّن/ قرى الروحة</span></a>
+                        </div-->
+                        <!--div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href=""  id="74" title="سَالِمْ/ ألحقت بقرى حيفا منذ 1949"> <span>سَالِمْ/ ألحقت بقرى حيفا منذ 1949</span></a>
+                        </div-->
+                        <!--div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href=""  id="76" title="شفيَّا/ قرى الروحة"> <span>شفيَّا/ قرى الروحة</span></a>
+                        </div-->
+                        <!--div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href=""  id="78" title="صَفَصَافا/ قرى الروحة"> <span>صَفَصَافا/ قرى الروحة</span></a>
+                        </div-->
+                        <!--div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href=""  id="89" title="عَارَة/ قرى الروحة/ من قرى المثلث الشمالي"> <span>عَارَة/ قرى الروحة/ من قرى المثلث الشمالي</span></a>
+                        </div-->
+                        <!--div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href=""  id="93" title="قِيّرَة وقَامُونْ/ قرى الروحة"> <span>قِيّرَة وقَامُونْ/ قرى الروحة</span></a>
+                        </div-->
+                        <!--div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href=""  id="95" title="كركور"> <span>كركور</span></a>
+                        </div-->
+                        <!--div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href=""  id="96" title="كعبية"> <span>كعبية</span></a>
+                        </div-->
+                        <!--div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href=""  id="99" title="كفريتا / كفرتيا / كفرتا"> <span>كفريتا / كفرتيا / كفرتا</span></a>
+                        </div-->
+                        <!--div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href=""  id="104" title="مذبحة الريفاينري/ مذبحة مصفاة حيفا"> <span>مذبحة الريفاينري/ مذبحة مصفاة حيفا</span></a>
+                        </div-->
+                        <!--div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href=""  id="105" title="منشية زبدة / السعدية"> <span>منشية زبدة / السعدية</span></a>
+                        </div-->
+                        <!--div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href=""  id="106" title="ميسر/ خربة الشيخ ميسر/ بئر الحمام/ كانت تتبع طولكرم"> <span>ميسر/ خربة الشيخ ميسر/ بئر الحمام/ كانت تتبع طولكرم</span></a>
+                        </div-->
+                        <!--div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href=""  id="107" title="مُشَيْرِفَة/ ألحقت بقرى حيفا عام 1949/ قرى الروحة"> <span>مُشَيْرِفَة/ ألحقت بقرى حيفا عام 1949/ قرى الروحة</span></a>
+                        </div-->
+                        <!--div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href=""  id="108" title="مُعَاوِيّة/ ألحقت بقرى حيفا عام 1949/ قرى الروحة"> <span>مُعَاوِيّة/ ألحقت بقرى حيفا عام 1949/ قرى الروحة</span></a>
+                        </div-->
+                        <!--div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href=""  id="113" title="يَاجُور"> <span>يَاجُور</span></a>
+                        </div-->
+
+                        
+
+                        </div><!-- Second row ends here -->
+                    </div><!-- Col-12 end here -->
+                </div> <!-- First row ends here -->
+           </div><!-- Container-fluid ends here -->
+</body>
+</html>
+
+	<!-- <script src="ClickinghandlingJs/Salfit.js" type="text/javascript"></script> -->
+        <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('a').forEach(anchor => {
+                anchor.addEventListener('click', (event) => {
+                    event.preventDefault();
+                    
+                    const id = event.currentTarget.id;
+                    if (id) {
+                        window.parent.postMessage({ selectedIdofHaifa: id }, '*');
+                    }
+                });
+            });
+        });
+    </script>
+

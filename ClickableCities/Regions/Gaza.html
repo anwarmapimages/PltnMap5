@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gaza Region</title>
+
+    <!-- Bootstrap CSS -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../../mapcss/mapCss.css">
+
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                    <div class="links-wrap row">
+
+
+                        <div class="col-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <a href="#" onclick="window.location.href='../RegionsContent.html'; return false;" class="lf-to-rt">
+                                    <i class="fa fa-long-arrow-left"></i>
+                                </a>
+                        </div>
+
+
+
+
+                       
+
+
+
+                       <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#" id="0" title="Rafah Holocaust/Kuwait Peace Camp Massacre"> <span>Rafah Holocaust/Kuwait Peace Camp Massacre</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#" id="1" title="أُم النَصّر/ القرية البَدَويَّة- محافظة الشمال"> <span>أُم النَصّر/ القرية البَدَويَّة- محافظة الشمال</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#" id="2" title="إسْدُود"> <span>إسْدُود</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#" id="3" title="البَطَانِي الشَرقي"> <span>البَطَانِي الشَرقي</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#" id="4" title="البَطَانِي الغَربِي"> <span>البَطَانِي الغَربِي</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#" id="5" title="البُرَيْج/ خِربَة البُرَيْج- المحافظة الوسطى"> <span>البُرَيْج/ خِربَة البُرَيْج- المحافظة الوسطى</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#" id="6" title="الجَلَدِيّة"> <span>الجَلَدِيّة</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#" id="7" title="الجُورَة/ جُورَة عَسْقَلان"> <span>الجُورَة/ جُورَة عَسْقَلان</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#" id="8" title="الجِيَّة"> <span>الجِيَّة</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#" id="9" title="الزَهْرَاء- محافظة غَزَّة"> <span>الزَهْرَاء- محافظة غَزَّة</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#" id="10" title="الزَوَايّْدَة- محافظة الوُسْطَى"> <span>الزَوَايّْدَة- محافظة الوُسْطَى</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#" id="11" title="السَوَافِيّرْ الشَرْقيَّة"> <span>السَوَافِيّرْ الشَرْقيَّة</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#" id="12" title="السَوَافِيّرْ الشَمَالْية"> <span>السَوَافِيّرْ الشَمَالْية</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#" id="13" title="السَوَافِيّرْ الغَرّبِيّة"> <span>السَوَافِيّرْ الغَرّبِيّة</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#" id="14" title="الشَوّكَة/ شَوّكَة الصُوفَي- محافظة رَفَحْ"> <span>الشَوّكَة/ شَوّكَة الصُوفَي- محافظة رَفَحْ</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#" id="15" title="الفَالُوجَة"> <span>الفَالُوجَة</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#" id="16" title="الفَخَارِيْ/ الفَوَاخْرِي- محافظة خان يونس"> <span>الفَخَارِيْ/ الفَوَاخْرِي- محافظة خان يونس</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#" id="17" title="القَرّارَة- محافظة خَانْ يُونُسْ"> <span>القَرّارَة- محافظة خَانْ يُونُسْ</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#" id="18" title="القُسْطِيْنة/ قُسْطِيْنِة"> <span>القُسْطِيْنة/ قُسْطِيْنِة</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#" id="19" title="المحافظة الوسطى"> <span>المحافظة الوسطى</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#" id="20" title="المنصورة"> <span>المنصورة</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#" id="21" title="المَجْدَل/ المَجْدَل عَسْقَلان"> <span>المَجْدَل/ المَجْدَل عَسْقَلان</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#" id="22" title="المَسْمِّية الصغيرة/ مسْمِّية الحوراني/ الحورانية"> <span>المَسْمِّية الصغيرة/ مسْمِّية الحوراني/ الحورانية</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#" id="23" title="المَسْمِّية الكَبِيرَة"> <span>المَسْمِّية الكَبِيرَة</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#" id="24" title="المَغَازِي/ دَاثِنْ- المحافظة الوسطى"> <span>المَغَازِي/ دَاثِنْ- المحافظة الوسطى</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#" id="25" title="المُحَرّقَة"> <span>المُحَرّقَة</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#" id="26" title="المُصَدَّر- المحافظة الوسطى"> <span>المُصَدَّر- المحافظة الوسطى</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#" id="27" title="المُغْراقَة- محافظة غَزَّة"> <span>المُغْراقَة- محافظة غَزَّة</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#" id="28" title="النَصْر/ البْيُوكْ- محافظة رَفَحْ"> <span>النَصْر/ البْيُوكْ- محافظة رَفَحْ</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#" id="29" title="النَّزْلَة/ نَّزْلَة جَبَالْيا- محافظة الشمال"> <span>النَّزْلَة/ نَّزْلَة جَبَالْيا- محافظة الشمال</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#" id="30" title="النُصَيْرَاتْ- المحافظة الوسطى"> <span>النُصَيْرَاتْ- المحافظة الوسطى</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#" id="31" title="بني سُهَيْلَا- محافظة محافظة خَانْ يُونُسْ"> <span>بني سُهَيْلَا- محافظة محافظة خَانْ يُونُسْ</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#" id="32" title="بيت عَفّا"> <span>بيت عَفّا</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#" id="33" title="بَرْبَرَة"> <span>بَرْبَرَة</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#" id="34" title="بَرْقَة"> <span>بَرْقَة</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#" id="35" title="بَيتْ حَانُّونْ- محافظة الشمال"> <span>بَيتْ حَانُّونْ- محافظة الشمال</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#" id="36" title="بَيتْ دَرَاسْ"> <span>بَيتْ دَرَاسْ</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#" id="37" title="بَيتْ طِيْمَا"> <span>بَيتْ طِيْمَا</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#" id="38" title="بَيّتْ جِرْجَا"> <span>بَيّتْ جِرْجَا</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#" id="39" title="بَيّتْ لاهِيْا- محافظة الشمال"> <span>بَيّتْ لاهِيْا- محافظة الشمال</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#" id="40" title="بَيّتْ لاهِيْا-محافظة الشمال"> <span>بَيّتْ لاهِيْا-محافظة الشمال</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#" id="41" title="بُرَيْر"> <span>بُرَيْر</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#" id="42" title="بِعْلِيْن"> <span>بِعْلِيْن</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#" id="43" title="تَلْ التُّرْمُس"> <span>تَلْ التُّرْمُس</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#" id="44" title="جَبَالْيا- محافظة الشمال"> <span>جَبَالْيا- محافظة الشمال</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#" id="45" title="جُحْر الديك- محافظة غزة"> <span>جُحْر الديك- محافظة غزة</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#" id="46" title="جُسْيَرْ"> <span>جُسْيَرْ</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#" id="47" title="جُولِسْ- غزة"> <span>جُولِسْ- غزة</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#" id="48" title="حَتّا"> <span>حَتّا</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#" id="49" title="حَمَامَة"> <span>حَمَامَة</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#" id="50" title="حُلَيْقًاتْ"> <span>حُلَيْقًاتْ</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#" id="51" title="خربة الخِصَاص/ الخِصَاص- غزة"> <span>خربة الخِصَاص/ الخِصَاص- غزة</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#" id="52" title="خَانْ يُونُسْ"> <span>خَانْ يُونُسْ</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#" id="53" title="خُزَاعَة- محافظة خَانْ يُونُسْ"> <span>خُزَاعَة- محافظة خَانْ يُونُسْ</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#" id="54" title="دير بني شجاع"> <span>دير بني شجاع</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#" id="55" title="دَيْر البَلَحْ/ المحافظة الوسطى"> <span>دَيْر البَلَحْ/ المحافظة الوسطى</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#" id="56" title="دَيْر سُنَيْد"> <span>دَيْر سُنَيْد</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#" id="57" title="دِمْرَة"> <span>دِمْرَة</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#" id="58" title="رَفَحْ"> <span>رَفَحْ</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#" id="59" title="سِمْسِم"> <span>سِمْسِم</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#" id="60" title="صُمَّيِلْ"> <span>صُمَّيِلْ</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#" id="61" title="عَبَسَان الجديدة/ الصغيرة - محافظة خَانْ يُونِسْ"> <span>عَبَسَان الجديدة/ الصغيرة - محافظة خَانْ يُونِسْ</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#"  id="62" title="عَبَسَانْ الكبيرة- محافظة خاَنْ يُونِسْ"> <span>عَبَسَانْ الكبيرة- محافظة خاَنْ يُونِسْ</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#"  id="63" title="عَرَبْ صُقْريِر- سكرير/ عرب أبو سُوَيْرِح"> <span>عَرَبْ صُقْريِر- سكرير/ عرب أبو سُوَيْرِح</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#"  id="64" title="عَسْقَلان"> <span>عَسْقَلان</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#"  id="65" title="عِبْدِس"> <span>عِبْدِس</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#"  id="66" title="عِرِاقْ المَنْشِيَّة"> <span>عِرِاقْ المَنْشِيَّة</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#"  id="67" title="عِرِاقْ سُوَيْدَانْ"> <span>عِرِاقْ سُوَيْدَانْ</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#"  id="68" title="عِزْبَة بيت حانون- محافظة الشمال"> <span>عِزْبَة بيت حانون- محافظة الشمال</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#"  id="69" title="غَزَّة- محافظة غَزَّة"> <span>غَزَّة- محافظة غَزَّة</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#"  id="70" title="كرتيّا"> <span>كرتيّا</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#"  id="71" title="كَوْفَخة"> <span>كَوْفَخة</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#"  id="72" title="كَوْكَبَا"> <span>كَوْكَبَا</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#"  id="73" title="مجزرة بَيتْ دَرَاسْ"> <span>مجزرة بَيتْ دَرَاسْ</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#"  id="74" title="مجزرة خيام مواصي رفح"> <span>مجزرة خيام مواصي رفح</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#"  id="75" title="مجزرة دَوّار النَابلْسِي"> <span>مجزرة دَوّار النَابلْسِي</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#"  id="76" title="مجزرة عائلة أبو جراد"> <span>مجزرة عائلة أبو جراد</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#"  id="77" title="مجزرة عائلة أبو سنيمة"> <span>مجزرة عائلة أبو سنيمة</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#"  id="78" title="مجزرة عائلة الهور الأولى"> <span>مجزرة عائلة الهور الأولى</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#"  id="79" title="مجزرة عائلة زيد الصوص"> <span>مجزرة عائلة زيد الصوص</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#"  id="80" title="مجزرة عائلة طنبورة"> <span>مجزرة عائلة طنبورة</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#"  id="81" title="مجزرة عائلة فلاح عيد الحشاش"> <span>مجزرة عائلة فلاح عيد الحشاش</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#"  id="82" title="مجزرة عائلة محمد محمود عدوان"> <span>مجزرة عائلة محمد محمود عدوان</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#"  id="83" title="مجزرة عائلتي أبو خاطر وأبو حماد"> <span>مجزرة عائلتي أبو خاطر وأبو حماد</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#"  id="84" title="مجزرة مخيم البُرَيْج/ الحمام"> <span>مجزرة مخيم البُرَيْج/ الحمام</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#"  id="85" title="مجزرة مدرسة السردي"> <span>مجزرة مدرسة السردي</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#"  id="86" title="مجزرة مستشفى المعمداني"> <span>مجزرة مستشفى المعمداني</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#"  id="87" title="محافظة شمال قطاع غزة"> <span>محافظة شمال قطاع غزة</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a  href="#" id="88" title="محرقة رفح/ مجزرة مخيم السلام الكويتي للنازحين"> <span>محرقة رفح/ مجزرة مخيم السلام الكويتي للنازحين</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a  href="#" id="89" title="مخيم  رَفَحْ/مُعَسّكَر رَفَحْ- محافظة رَفَحْ"> <span>مخيم  رَفَحْ/مُعَسّكَر رَفَحْ- محافظة رَفَحْ</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a  href="#" id="90" title="مخيم البُرَيْج/مُعَسّكَر  البُرَيْج- المحافظة الوسطى"> <span>مخيم البُرَيْج/مُعَسّكَر  البُرَيْج- المحافظة الوسطى</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a  href="#" id="91" title="مخيم الشّاطِئ/مُعَسّكَر الشّاطِئ- محافظة غَزَّة"> <span>مخيم الشّاطِئ/مُعَسّكَر الشّاطِئ- محافظة غَزَّة</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a  href="#" id="92" title="مخيم المَغَازِي/مُعَسّكَر المَغَازِي- المحافظة الوسطى"> <span>مخيم المَغَازِي/مُعَسّكَر المَغَازِي- المحافظة الوسطى</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a  href="#" id="93" title="مخيم النُصَيْرَاتْ/مُعَسّكَر النُصَيْرَاتْ- المحافظة الوسطى"> <span>مخيم النُصَيْرَاتْ/مُعَسّكَر النُصَيْرَاتْ- المحافظة الوسطى</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a  href="#" id="94" title="مخيم جَبَالْيا/مُعَسّكَر جَبَالْيا- محافظة الشمال"> <span>مخيم جَبَالْيا/مُعَسّكَر جَبَالْيا- محافظة الشمال</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a  href="#" id="95" title="مخيم خَانْ يُونُسْ/مُعَسّكَر خَانْ يُونُسْ- محافظة خَانْ يُونُسْ"> <span>مخيم خَانْ يُونُسْ/مُعَسّكَر خَانْ يُونُسْ- محافظة خَانْ يُونُسْ</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a  href="#" id="96" title="مخيم دِير البَلَحْ/مُعَسّكَر دِير البَلَحْ- المحافظة الوسطى"> <span>مخيم دِير البَلَحْ/مُعَسّكَر دِير البَلَحْ- المحافظة الوسطى</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a  href="#" id="97" title="نَجْد"> <span>نَجْد</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a  href="#" id="98" title="نِعِلْيَا"> <span>نِعِلْيَا</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a  href="#" id="99" title="هُوج"> <span>هُوج</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a  href="#" id="100" title="هِربْيَا"> <span>هِربْيَا</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a  href="#" id="101" title="وادِي السَلْقَا- المحافظة الوسطى"> <span>وادِي السَلْقَا- المحافظة الوسطى</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a  href="#" id="102" title="يَاصُوْر/ يَاسُوْر"> <span>يَاصُوْر/ يَاسُوْر</span></a>
+                        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+                        
+
+                        </div><!-- Second row ends here -->
+                    </div><!-- Col-12 end here -->
+                </div> <!-- First row ends here -->
+           </div><!-- Container-fluid ends here -->
+</body>
+</html>
+
+	<!-- <script src="ClickinghandlingJs/Salfit.js" type="text/javascript"></script> -->
+        <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('a').forEach(anchor => {
+                anchor.addEventListener('click', (event) => {
+                    event.preventDefault();
+                    
+                    const id = event.currentTarget.id;
+                    if (id) {
+                        // Send a message to the parent window
+                        window.parent.postMessage({ selectedIdofSalfit: id }, '*');
+                        // console.log(id);
+                    }
+                });
+            });
+        });
+    </script>
+

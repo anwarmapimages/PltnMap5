@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ramallah Region</title>
+
+    <!-- Bootstrap CSS -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../../mapcss/mapCss.css">
+
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                    <div class="links-wrap row">
+
+
+                        <div class="col-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <a href="#" onclick="window.location.href='../RegionsContent.html'; return false;" class="lf-to-rt">
+                                    <i class="fa fa-long-arrow-left"></i>
+                                </a>
+                        </div>
+
+
+
+
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#" id="0" title="أبو شخيدم"> <span>أبو شخيدم</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#" id="1" title="أبو قَشّ"> <span>أبو قَشّ</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#" id="2" title="أم صفا"> <span>أم صفا</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#" id="3" title="البيرة"> <span>البيرة</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#" id="4" title="الجانية"> <span>الجانية</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#" id="5" title="الطيبة"> <span>الطيبة</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#" id="6" title="الطيرة"> <span>الطيرة</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#" id="7" title="اللبن الغربي"> <span>اللبن الغربي</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#" id="8" title="المدية / الرملة سابقا ورام الله حاليا: من القرة التسعة"> <span>المدية / الرملة سابقا ورام الله حاليا: من القرة التسعة</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="#" id="9" title="المزرعة الشرقية"> <span>المزرعة الشرقية</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                               <a href="#" id="10" title="المزرعة القبلية"> <span>المزرعة القبلية</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                               <a href="#" id="11" title="المغير - رام الله"> <span>المغير - رام الله</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                               <a href="#" id="12" title="بدرس"> <span>بدرس</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                               <a href="#" id="13" title="برقة - برقا رام الله"> <span>برقة - برقا رام الله</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                               <a href="#" id="14" title="برهام"> <span>برهام</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                               <a href="#" id="15" title="بلعين: من القرى التسعة"> <span>بلعين: من القرى التسعة</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="" id="16" title="بيت ريما"> <span>بيت ريما</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="" id="17" title="بيت سيرا"> <span>بيت سيرا</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="" id="18" title="بيت عور التحتا"> <span>بيت عور التحتا</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="" id="19" title="بيت عور الفوقا"> <span>بيت عور الفوقا</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="" id="20" title="بيت لقيا: كانت تتبع الرملة سابقا"> <span>بيت لقيا: كانت تتبع الرملة سابقا</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="" id="21" title="بيتونيا"> <span>بيتونيا</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="" id="22" title="بيْرزَيَتْ"> <span>بيْرزَيَتْ</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="" id="23" title="بَيتْين"> <span>بَيتْين</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="" id="24" title="بِيتِللُّو- بلدة الاتحاد"> <span>بِيتِللُّو- بلدة الاتحاد</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="" id="25" title="جَمَّالا- بلدة الاتحاد"> <span>جَمَّالا- بلدة الاتحاد</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="" id="26" title="جِيبْيَا"> <span>جِيبْيَا</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="" id="27" title="خربة أبو فلاح"> <span>خربة أبو فلاح</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="" id="28" title="خربة كفر عانة / عانا / كفر ناتا"> <span>خربة كفر عانة / عانا / كفر ناتا</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="" id="29" title="خربثا المصباح"> <span>خربثا المصباح</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="" id="30" title="خربثا بن الحارث: من القرى التسعة"> <span>خربثا بن الحارث: من القرى التسعة</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="" id="31" title="دورا القرع"> <span>دورا القرع</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="" id="32" title="دير أبو مشعل"> <span>دير أبو مشعل</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="" id="33" title="دير إبزيع"> <span>دير إبزيع</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="" id="34" title="دير إبزيغ"> <span>دير إبزيغ</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="" id="35" title="دير السودان"> <span>دير السودان</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="" id="36" title="دير جرير"> <span>دير جرير</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="" id="37" title="دير عَمَّار- بلدة الاتحاد"> <span>دير عَمَّار- بلدة الاتحاد</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="" id="38" title="دير غَسَّانِة"> <span>دير غَسَّانِة</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="" id="39" title="دير قديس: من القرى التسعة"> <span>دير قديس: من القرى التسعة</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="" id="40" title="دير نظام"> <span>دير نظام</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="" id="41" title="ديردبوان"> <span>ديردبوان</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="" id="42" title="راس كركر"> <span>راس كركر</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="" id="43" title="رمون"> <span>رمون</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="" id="44" title="رنتيس"> <span>رنتيس</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="" id="45" title="سردا / صردا"> <span>سردا / صردا</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="" id="46" title="سلواد"> <span>سلواد</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="" id="47" title="سنجل"> <span>سنجل</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="" id="48" title="شبتين/ رام الله: من القرى التسعة"> <span>شبتين/ رام الله: من القرى التسعة</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="" id="49" title="شُقبَا / شُقبَة:كانت تتبع الرملة سابقا، من القرى التسعة"> <span>شُقبَا / شُقبَة:كانت تتبع الرملة سابقا، من القرى التسعة</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="" id="50" title="صفّا"> <span>صفّا</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="" id="51" title="عارورة"> <span>عارورة</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="" id="52" title="عبود / عابود"> <span>عبود / عابود</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="" id="53" title="عبوين"> <span>عبوين</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="" id="54" title="عجّول"> <span>عجّول</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="" id="55" title="عطارة"> <span>عطارة</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="" id="56" title="عين سينيا"> <span>عين سينيا</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="" id="57" title="عين عريك"> <span>عين عريك</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="" id="58" title="عين قِينْيَا/ قِينْيَا"> <span>عين قِينْيَا/ قِينْيَا</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="" id="59" title="عين يبرود"> <span>عين يبرود</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="" id="60" title="قبية /  قبيا كانت تتبع القدس: من القرى التسعة"> <span>قبية /  قبيا كانت تتبع القدس: من القرى التسعة</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="" id="61" title="قراوة بني زيد"> <span>قراوة بني زيد</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="" id="62" title="كفر عين"> <span>كفر عين</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="" id="63" title="كفر نعمة"> <span>كفر نعمة</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="" id="64" title="كوبر"> <span>كوبر</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="" id="65" title="مخيم دير عَمَّار- بلدة الاتحاد"> <span>مخيم دير عَمَّار- بلدة الاتحاد</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="" id="66" title="مزارع النوباني"> <span>مزارع النوباني</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="" id="67" title="نعلين: من القرى التسعة"> <span>نعلين: من القرى التسعة</span></a>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                                <a href="" id="68" title="يبرود"> <span>يبرود</span></a>
+                        </div>
+
+
+
+                        
+
+
+
+
+
+
+
+                        
+
+                        </div><!-- Second row ends here -->
+                    </div><!-- Col-12 end here -->
+                </div> <!-- First row ends here -->
+           </div><!-- Container-fluid ends here -->
+</body>
+</html>
+
+	<!-- <script src="ClickinghandlingJs/Salfit.js" type="text/javascript"></script> -->
+        <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('a').forEach(anchor => {
+                anchor.addEventListener('click', (event) => {
+                    event.preventDefault();
+                    
+                    const id = event.currentTarget.id;
+                    if (id) {
+                        // Send a message to the parent window
+                        window.parent.postMessage({ selectedIdofSalfit: id }, '*');
+                        // console.log(id);
+                    }
+                });
+            });
+        });
+    </script>
+

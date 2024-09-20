@@ -1,0 +1,2544 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <title>Palestine Map</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="mapcss/mapCss.css">
+
+    <style type="text/css">
+    </style>
+
+</head>
+
+<body onload="initMap()" bgcolor="black">
+
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-6 half-width border-box">
+				<div class="row">
+
+							 <iframe src="ClickableCities/RegionsContent.html" class="iframe-container"></iframe>							
+
+				</div>
+			</div>
+			<div class="col-6 half-width border-box">				
+   			 <div id="map"></div>
+			</div>
+		</div>
+	</div>
+
+	<iframe id="externalFrame" src="ClickableCities/Salfit.html" style="display:none;"></iframe>
+
+
+        
+
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDru4JrckBTnb2_0t8kqTyj6qqGA8ALiuc&libraries=&v=weekly&callback=initMap"></script>
+
+	  
+	<script src="VariAbles/VariableFile.js" type="text/javascript"></script>
+	<!-- <script src="ClickableCities/ClickinghandlingJs/Salfit.js"></script> -->
+	  
+
+
+
+
+
+
+    <script>
+
+
+    </script>
+
+
+
+
+
+    <script>
+
+
+// let safad_webClick = null;
+
+                // if(safad_webClick){
+                // console.log("Hi.........",safad_webClick);
+                // alert("Hiiiiiiiiiiiiiiiiiiiiiiiiiiiiii");
+
+                // }
+    	// console.log("Hi, again: ",Safad_webClick);
+
+
+// document.addEventListener('DOMContentLoaded', initializes);
+
+
+
+
+
+
+
+
+
+        // document.addEventListener('DOMContentLoaded', () => {
+            // Get the stored ID from localStorage
+            // const id = localStorage.getItem('selectedId');
+
+            // Display the ID in the HTML
+            // if (id) {
+
+
+                // Log the ID to the console
+                // console.log(`Hiiiiiiiiiiiiiiiiiiiiiiiiiiiiii, Retrieved ID from localStorage: ${id}`);
+
+                // Optionally, clear the ID from localStorage
+        //         localStorage.removeItem('selectedId');
+        //     } else {
+        //        console.log("No reg selected");
+        //     }
+        // });
+
+
+
+
+
+
+
+
+
+// console.log("The id: ",mytid);
+                // localStorage.removeItem('selectedId');
+
+
+        // document.addEventListener('DOMContentLoaded', () => {
+        //     // Retrieve the ID from localStorage
+        //     // let selectedId = localStorage.getItem('selectedId');
+
+        //         // console.log("Hi, it's started working: ",selectedId);
+        //     // Get the display element
+        //     // const displayElement = document.getElementById('displayId');
+
+        //     if (Safad_webClick) {
+        //         // Display the ID on the page
+        //         // displayElement.textContent = `The selected ID is: ${selectedId}`;
+        //         console.log("Hi, again: ",Safad_webClick);
+        //         alert("Hi");
+        //         // window.location.href = 'ClickableCities/Salfit.html'; // Navigate to index.html
+        //     }
+
+        //     // Optionally clear the ID from localStorage if no longer needed
+        //     // localStorage.removeItem('selectedId');
+        // });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// let theId;
+//                     console.log('Clicked ID: HHHHHHHHHHHHHHh', theId);
+
+
+        //         document.addEventListener('DOMContentLoaded', () => {
+        //     // Get the stored ID from localStorage
+        //     const id = localStorage.getItem('selectedId');
+
+        //     // Log the ID to the console
+        //     if (id) {
+        //         console.log(`Hiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii, Retrieved ID from localStorage: ${id}`);
+        //     } else {
+        //         console.log('No ID found in localStorage.');
+        //     }
+        // });
+
+
+
+
+        // 	function myregionIds($ids) {
+
+
+        //         document.addEventListener('DOMContentLoaded', () => {
+        //     // Get the stored ID from localStorage
+        //     const id = $ids;//localStorage.getItem('selectedId');
+
+        //     // Log the ID to the console
+        //     if (id) {
+        //         console.log(`Retrieved ID from localStorage: ${id}`);
+        //     } else {
+        //         console.log('No ID found in localStorage.');
+        //     }
+        // });
+        //     }
+
+
+
+
+
+
+
+
+        //         document.addEventListener('DOMContentLoaded', () => {
+        //     // Retrieve the stored ID from localStorage
+        //     const id = localStorage.getItem('selectedId');
+
+        //     // Display the ID in an element with id 'display-id'
+        //     const displayElement = document.getElementById('display-id');
+        //     if (displayElement) {
+        //         if (id) {
+        //             displayElement.textContent = `Selected ID: ${id}`;
+        //         } else {
+        //             displayElement.textContent = 'No ID found in localStorage.';
+        //         }
+        //     }
+            
+        //     // Optionally, clear the ID from localStorage after displaying it
+        //     // localStorage.removeItem('selectedId'); // Uncomment this if you want to clear the ID
+        // });
+
+
+
+
+
+
+
+
+
+
+        // Function to store the ID in localStorage
+// function storeId(id) {
+//     if (id) {
+//         // Store the ID in localStorage
+//         localStorage.setItem('selectedId', id);
+//         console.log("Nice it's working: ", id);
+//     }
+// }
+
+
+
+
+
+        // // Function to store the ID in localStorage
+        // window.storeId2 = function(id) {
+        //     if (id) {
+        //         // Store the ID in localStorage
+        //         localStorage.setItem('selectedId', id);
+        //         console.log("Nice it's working hhhh: ", id);
+        //     }
+        // }
+
+
+
+
+
+
+
+
+
+
+        // document.addEventListener('DOMContentLoaded', () => {
+        //     // Declare theId globally
+        //     // let theId = null;
+
+        //     // Add click event listeners to all anchor tags
+        //     document.querySelectorAll('a').forEach(anchor => {
+        //         anchor.addEventListener('click', (event) => {
+        //             // Prevent default anchor behavior
+        //             event.preventDefault();
+                    
+        //             // Get the ID of the clicked element
+        //             // theId = event.currentTarget.id;
+
+        //             // Store the ID in localStorage or print it
+
+        //             // You can store it in localStorage if needed
+        //             // localStorage.setItem('selectedId', theId);
+        //         });
+        //     });
+        // });
+
+
+
+
+// Function to send the ID to the parent frame
+// function storeId2(theId) {
+//     if (theId) {
+//         // Store the ID in localStorage
+//         localStorage.setItem('selectedId', theId);
+        
+//         console.log(theId);
+//         // Send the ID to the parent window
+//         // window.parent.postMessage(id, 'https://your-expected-origin.com');
+//     }
+// }
+
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+    <script>
+
+            var map;
+			var mapCenter = {lat: 31.574882315062602, lng: 35.070829168592425};
+			
+
+            function initMap() {
+                map = new google.maps.Map(document.getElementById("map"), {
+                    zoom: 8,
+                    minZoom: 7,
+                    center: mapCenter,
+                    mapTypeId:  'satellite',
+				    mapTypeControl: false,
+                });
+
+				
+
+            let Village_currentInfoWindow = null; // Putting the currentInfoWindow variable to null to track infowindow
+			
+			let Safad_infoWindow = null;
+			let SafadMarkerColor = {
+				path: google.maps.SymbolPath.CIRCLE,
+				scale: 4.5,
+				fillColor: "#9D3327",
+				fillOpacity: 1,
+				strokeColor: "#FFF",
+				strokeWeight: 0.9,
+			};
+			
+			let Akka_infoWindow = null;
+			let AkkaMarkerColor = {
+				path: google.maps.SymbolPath.CIRCLE,
+				scale: 4.5,
+				fillColor: "#86624C",
+				fillOpacity: 1,
+				strokeColor: "#F88379",
+				strokeWeight: 0.9,
+			};
+			
+			let Tiberias_infoWindow = null;
+			let TiberiasMarkerColor = {
+				path: google.maps.SymbolPath.CIRCLE,
+				scale: 4.5,
+				fillColor: "#3E7C99",
+				fillOpacity: 1,
+				strokeColor: "#FFF",
+				strokeWeight: 0.9,
+			};
+			
+			let Nazareth_infoWindow = null;
+			let NazarethMarkerColor = {
+				path: google.maps.SymbolPath.CIRCLE,
+				scale: 4.5,
+				fillColor: "#5B8A78",
+				fillOpacity: 1,
+				strokeColor: "#EFFBFF",
+				strokeWeight: 0.9,
+			};
+			
+			let Haifa_infoWindow = null;
+			let HaifaMarkerColor = {
+				path: google.maps.SymbolPath.CIRCLE,
+				scale: 4.5,
+				fillColor: "#FAEBD4",
+				fillOpacity: 1,
+				strokeColor: "#000",
+				strokeWeight: 0.9,
+			};
+			
+			let Bisan_infoWindow = null;
+			let BisanMarkerColor = {
+				path: google.maps.SymbolPath.CIRCLE,
+				scale: 4.5,
+				fillColor: "#5D3F73",
+				fillOpacity: 1,
+				strokeColor: "#FFF",
+				strokeWeight: 0.9,
+			};
+			
+			let Tubas_infoWindow = null;
+			let TubasMarkerColor = {
+				path: google.maps.SymbolPath.CIRCLE,
+				scale: 4.5,
+				fillColor: "#D84315",
+				fillOpacity: 1,
+				strokeColor: "#FFF",
+				strokeWeight: 0.9,
+			};
+			
+			let Jenin_infoWindow = null;
+			let JeninMarkerColor = {
+				path: google.maps.SymbolPath.CIRCLE,
+				scale: 4.5,
+				fillColor: "#ECF0FF",
+				fillOpacity: 1,
+				strokeColor: "#000",
+				strokeWeight: 0.9,
+			};
+			
+			let Tulkarm_infoWindow = null;
+			let TulkarmMarkerColor = {
+				path: google.maps.SymbolPath.CIRCLE,
+				scale: 4.5,
+				fillColor: "#59583C",
+				fillOpacity: 1,
+				strokeColor: "#FFF",
+				strokeWeight: 0.9,
+			};
+			
+			let Jericho_infoWindow = null;
+			let JerichoMarkerColor = {
+				path: google.maps.SymbolPath.CIRCLE,
+				scale: 4.5,
+				fillColor: "#EEBB00",
+				fillOpacity: 1,
+				strokeColor: "#333",
+				strokeWeight: 0.9,
+			};
+			
+			let Nablus_infoWindow = null;
+			let NablusMarkerColor = {
+				path: google.maps.SymbolPath.CIRCLE,
+				scale: 4.5,
+				fillColor: "#B67928",
+				fillOpacity: 1,
+				strokeColor: "#FFF",
+				strokeWeight: 0.9,
+			};
+			
+			let Qalqilya_infoWindow = null;
+			let QalqilyaMarkerColor = {
+				path: google.maps.SymbolPath.CIRCLE,
+				scale: 4.5,
+				fillColor: "#A9A9A9",
+				fillOpacity: 1,
+				strokeColor: "#FFF",
+				strokeWeight: 0.9,
+			};
+			
+			let Salfit_infoWindow = null;
+			let SalfitMarkerColor = {
+				path: google.maps.SymbolPath.CIRCLE,
+				scale: 4.5,
+				fillColor: "#3399CC",
+				fillOpacity: 1,
+				strokeColor: "#FFF",
+				strokeWeight: 0.9,
+			};
+			
+			let Yaffa_infoWindow = null;
+			let YaffaMarkerColor = {
+				path: google.maps.SymbolPath.CIRCLE,
+				scale: 4.5,
+				fillColor: "#843749",
+				fillOpacity: 1,
+				strokeColor: "#FFF",
+				strokeWeight: 0.9,
+			};
+			
+			let Ramallah_infoWindow = null;
+			let RamallahMarkerColor = {
+				path: google.maps.SymbolPath.CIRCLE,
+				scale: 4.5,
+				fillColor: "#B35879",
+				fillOpacity: 1,
+				strokeColor: "#FFF",
+				strokeWeight: 0.9,
+			};
+			
+			let Ramla_infoWindow = null;
+			let RamlaMarkerColor = {
+				path: google.maps.SymbolPath.CIRCLE,
+				scale: 4.5,
+				fillColor: "#F4A256",
+				fillOpacity: 1,
+				strokeColor: "#000",
+				strokeWeight: 0.9,
+			};
+			
+			let Jerusalem_infoWindow = null;
+			let JerusalemMarkerColor = {
+				path: google.maps.SymbolPath.CIRCLE,
+				scale: 4.5,
+				fillColor: "#9C623D",
+				fillOpacity: 1,
+				strokeColor: "#FFF",
+				strokeWeight: 0.9,
+			};
+			
+			let Bethlehem_infoWindow = null;
+			let BethlehemMarkerColor = {
+				path: google.maps.SymbolPath.CIRCLE,
+				scale: 4.5,
+				fillColor: "#693037",
+				fillOpacity: 1,
+				strokeColor: "#FFF",
+				strokeWeight: 0.9,
+			};
+			
+			let Hebron_infoWindow = null;
+			let HebronMarkerColor = {
+				path: google.maps.SymbolPath.CIRCLE,
+				scale: 4.5,
+				fillColor: "#BC2125",
+				fillOpacity: 1,
+				strokeColor: "#FFF",
+				strokeWeight: 0.9,
+			};
+			
+			let Gaza_infoWindow = null;
+			let GazaMarkerColor = {
+				path: google.maps.SymbolPath.CIRCLE,
+				scale: 4.5,
+				fillColor: "#753F7B",
+				fillOpacity: 1,
+				strokeColor: "#FFF",
+				strokeWeight: 0.9,
+			};
+			
+			let Beersheba_infoWindow = null;
+			let BeershebaMarkerColor = {
+				path: google.maps.SymbolPath.CIRCLE,
+				scale: 4.5,
+				fillColor: "#241E20",
+				fillOpacity: 1,
+				strokeColor: "#FFF",
+				strokeWeight: 0.9,
+			};
+
+
+
+
+
+
+
+
+
+
+
+   		Safad_markerData.forEach((Safad_markers, index) => {
+        let SafadnewMarker = new google.maps.Marker({
+            position: new google.maps.LatLng(Safad_markers.lat, Safad_markers.lng),
+            icon: SafadMarkerColor,
+            map: null,
+        });
+
+        // Add a click listener for the marker
+        SafadnewMarker.addListener('click', () => {
+            if (Village_currentInfoWindow) {
+                Village_currentInfoWindow.close(); // Close any existing info window
+            }
+
+            Safad_infoWindow = new google.maps.InfoWindow({
+                content: Safad_markers.title // Using the HTML-formatted title          
+            });
+
+            map.setZoom(16); // Set the zoom level
+            map.setCenter(SafadnewMarker.getPosition()); // Center the map on the marker
+            Safad_infoWindow.open(map, SafadnewMarker); // Show the info window
+            Village_currentInfoWindow = Safad_infoWindow;
+        });
+
+        Safad_markers_Cont.push(SafadnewMarker); // Push each marker into the array
+    });
+
+
+// Function to handle messages from the iframe
+window.addEventListener('message', (event) => {
+    const data = event.data;
+    if (data && data.selectedIdofSafed) {
+        const Safed_webClick = data.selectedIdofSafed;
+        handleSafedValue(Safed_webClick);
+    }
+});
+
+// Function to handle the selected value
+function handleSafedValue(Safedvalue) {
+    Safedvalue = Number(Safedvalue); // Convert value to number
+
+    // Ensure value is within the valid range
+    if (Safedvalue >= 0 && Safedvalue <= 81) {
+        // Show or hide markers based on the value
+        Safad_markers_Cont.forEach((marker, index) => {
+            if (index === Safedvalue) {
+                // Center the map on the selected marker
+                if (Village_currentInfoWindow) {
+                    Village_currentInfoWindow.close(); // Close any existing info window
+                }
+
+                Safad_infoWindow = new google.maps.InfoWindow({
+                    content: Safad_markerData[index].title // Using the title from the original data          
+                });
+
+                map.setZoom(16);
+                map.setCenter(marker.getPosition());
+                Safad_infoWindow.open(map, marker);
+                Village_currentInfoWindow = Safad_infoWindow;
+            }
+        });
+    }
+}
+
+
+    	   
+  			Akka_markerData.forEach((Akka_markers, index) => {
+    		let AkkanewMarker = new google.maps.Marker({	
+      		position: new google.maps.LatLng(Akka_markers.lat, Akka_markers.lng),
+			icon: AkkaMarkerColor,
+      		map: null,
+    		});
+
+    
+
+    		AkkanewMarker.addListener('click', () => {
+
+    		if (Village_currentInfoWindow) {
+        	Village_currentInfoWindow.close();
+      		}
+
+	      Akka_infoWindow = new google.maps.InfoWindow({
+    	  content: Akka_markers.title,        
+      	});
+
+
+	      map.setZoom(16);
+    	  map.setCenter(AkkanewMarker.getPosition());
+      	  Akka_infoWindow.open(map, AkkanewMarker);
+      	  Village_currentInfoWindow = Akka_infoWindow;
+
+    });
+	 Akka_markers_Cont.push(AkkanewMarker);
+  }); // end of markers in region here
+    	   
+
+        window.addEventListener('message', (event) => {
+
+            const data = event.data;
+            if (data && data.selectedIdofAkka) {
+                Akka_webClick = data.selectedIdofAkka;
+        		handleAkkaValue(Akka_webClick);
+            }
+        });
+
+
+
+function handleAkkaValue(Akkavalue) {
+    Akkavalue = Number(Akkavalue);
+
+    if (Akkavalue >= 0 && Akkavalue <= 55) {
+
+        Akka_markers_Cont.forEach((marker, index) => {
+            if (index === Akkavalue) {
+                if (Village_currentInfoWindow) {
+                    Village_currentInfoWindow.close();
+                }
+
+                Akka_infoWindow = new google.maps.InfoWindow({
+                    content: Akka_markerData[index].title   
+                });
+
+                map.setZoom(16);
+                map.setCenter(marker.getPosition());
+                Akka_infoWindow.open(map, marker);
+                Village_currentInfoWindow = Akka_infoWindow;
+            }
+        });
+    }
+}		
+
+
+
+  			Tiberias_markerData.forEach((Tiberias_markers, index) => {
+    		let TiberiasnewMarker = new google.maps.Marker({	
+      		position: new google.maps.LatLng(Tiberias_markers.lat, Tiberias_markers.lng),
+			icon: TiberiasMarkerColor,
+      		map: null,
+    		});
+
+    
+
+    		TiberiasnewMarker.addListener('click', () => {
+
+    		if (Village_currentInfoWindow) {
+        	Village_currentInfoWindow.close();
+      		}
+
+	      Tiberias_infoWindow = new google.maps.InfoWindow({
+    	  content: Tiberias_markers.title,        
+      	});
+
+
+	      map.setZoom(16);
+    	  map.setCenter(TiberiasnewMarker.getPosition());
+      	  Tiberias_infoWindow.open(map, TiberiasnewMarker);
+      	  Village_currentInfoWindow = Tiberias_infoWindow;
+
+    });
+	 Tiberias_markers_Cont.push(TiberiasnewMarker);
+  }); // end of markers in region here
+
+    	   
+        window.addEventListener('message', (event) => {
+
+            const data = event.data;
+            if (data && data.selectedIdofTiberias) {
+                Tiberias_webClick = data.selectedIdofTiberias;
+        		handleTiberiasValue(Tiberias_webClick);
+            }
+        });
+
+
+function handleTiberiasValue(Tiberiasvalue) {
+    Tiberiasvalue = Number(Tiberiasvalue);
+
+    if (Tiberiasvalue >= 0 && Tiberiasvalue <= 55) {
+
+        Tiberias_markers_Cont.forEach((marker, index) => {
+            if (index === Tiberiasvalue) {
+                if (Village_currentInfoWindow) {
+                    Village_currentInfoWindow.close();
+                }
+
+                Tiberias_infoWindow = new google.maps.InfoWindow({
+                    content: Tiberias_markerData[index].title
+                });
+
+                map.setZoom(16);
+                map.setCenter(marker.getPosition());
+                Tiberias_infoWindow.open(map, marker);
+                Village_currentInfoWindow = Tiberias_infoWindow;
+            }
+        });
+    }
+}
+
+
+
+
+
+
+  			Nazareth_markerData.forEach((Nazareth_markers, index) => {
+    		let NazarethnewMarker = new google.maps.Marker({	
+      		position: new google.maps.LatLng(Nazareth_markers.lat, Nazareth_markers.lng),
+			icon: NazarethMarkerColor,
+      		map: null,
+    		});
+
+    
+
+    		NazarethnewMarker.addListener('click', () => {
+
+    		if (Village_currentInfoWindow) {
+        	Village_currentInfoWindow.close();
+      		}
+
+	      Nazareth_infoWindow = new google.maps.InfoWindow({
+    	  content: Nazareth_markers.title,        
+      	});
+
+
+	      map.setZoom(16);
+    	  map.setCenter(NazarethnewMarker.getPosition());
+      	  Nazareth_infoWindow.open(map, NazarethnewMarker);
+      	  Village_currentInfoWindow = Nazareth_infoWindow;
+
+    });
+	 Nazareth_markers_Cont.push(NazarethnewMarker);
+  }); // end of markers in region here
+    	   
+
+        window.addEventListener('message', (event) => {
+
+            const data = event.data;
+            if (data && data.selectedIdofNazareth) {
+                Nazareth_webClick = data.selectedIdofNazareth;
+        		handleNazarethValue(Nazareth_webClick);
+            }
+        });
+
+
+
+function handleNazarethValue(Nazarethvalue) {
+    Nazarethvalue = Number(Nazarethvalue);
+
+    if (Nazarethvalue >= 0 && Nazarethvalue <= 22) {
+
+        Nazareth_markers_Cont.forEach((marker, index) => {
+            if (index === Nazarethvalue) {
+                if (Village_currentInfoWindow) {
+                    Village_currentInfoWindow.close();
+                }
+
+                Nazareth_infoWindow = new google.maps.InfoWindow({
+                    content: Nazareth_markerData[index].title   
+                });
+
+                map.setZoom(16);
+                map.setCenter(marker.getPosition());
+                Nazareth_infoWindow.open(map, marker);
+                Village_currentInfoWindow = Nazareth_infoWindow;
+            }
+        });
+    }
+}
+
+
+  			Haifa_markerData.forEach((Haifa_markers, index) => {
+    		let HaifanewMarker = new google.maps.Marker({	
+      		position: new google.maps.LatLng(Haifa_markers.lat, Haifa_markers.lng),
+			icon: HaifaMarkerColor,
+      		map: null,
+    		});
+
+    
+
+    		HaifanewMarker.addListener('click', () => {
+
+    		if (Village_currentInfoWindow) {
+        	Village_currentInfoWindow.close();
+      		}
+
+	      Haifa_infoWindow = new google.maps.InfoWindow({
+    	  content: Haifa_markers.title,        
+      	});
+
+
+	      map.setZoom(16);
+    	  map.setCenter(HaifanewMarker.getPosition());
+      	  Haifa_infoWindow.open(map, HaifanewMarker);
+      	  Village_currentInfoWindow = Haifa_infoWindow;
+
+    });
+	 Haifa_markers_Cont.push(HaifanewMarker);
+  }); // end of markers in region here
+  	   
+
+        window.addEventListener('message', (event) => {
+
+            const data = event.data;
+            if (data && data.selectedIdofHaifa) {
+                Haifa_webClick = data.selectedIdofHaifa;
+        		handleHaifaValue(Haifa_webClick);
+            }
+        });
+
+
+function handleHaifaValue(Haifavalue) {
+    Haifavalue = Number(Haifavalue);
+
+    if (Haifavalue >= 0 && Haifavalue <= 56) {
+
+        Haifa_markers_Cont.forEach((marker, index) => {
+            if (index === Haifavalue) {
+                if (Village_currentInfoWindow) {
+                    Village_currentInfoWindow.close();
+                }
+
+                Haifa_infoWindow = new google.maps.InfoWindow({
+                    content: Haifa_markerData[index].title
+                });
+
+                map.setZoom(16);
+                map.setCenter(marker.getPosition());
+                Haifa_infoWindow.open(map, marker);
+                Village_currentInfoWindow = Haifa_infoWindow;
+            }
+        });
+    }
+}
+  			
+
+  			
+    	   
+
+
+    	Bisan_markerData.forEach((Bisan_markers, index) => {
+    		let BisannewMarker = new google.maps.Marker({	
+      		position: new google.maps.LatLng(Bisan_markers.lat, Bisan_markers.lng),
+			icon: BisanMarkerColor,
+      		map: null,
+    		});
+
+    
+
+    		BisannewMarker.addListener('click', () => {
+
+    		if (Village_currentInfoWindow) {
+        	Village_currentInfoWindow.close();
+      		}
+
+	      Bisan_infoWindow = new google.maps.InfoWindow({
+    	  content: Bisan_markers.title,        
+      	});
+
+
+	      map.setZoom(16);
+    	  map.setCenter(BisannewMarker.getPosition());
+      	  Bisan_infoWindow.open(map, BisannewMarker);
+      	  Village_currentInfoWindow = Bisan_infoWindow;
+
+    });
+	 Bisan_markers_Cont.push(BisannewMarker);
+  }); // end of markers in region here
+
+
+        window.addEventListener('message', (event) => {
+
+            const data = event.data;
+            if (data && data.selectedIdofBeisan) {
+                Bisan_webClick = data.selectedIdofBeisan;
+        		handleBisanValue(Bisan_webClick);
+            }
+        });
+
+
+
+function handleBisanValue(Bisanvalue) {
+    Bisanvalue = Number(Bisanvalue);
+
+    if (Bisanvalue >= 0 && Bisanvalue <= 17) {
+        Bisan_markers_Cont.forEach((marker, index) => {
+            if (index === Bisanvalue) {
+                if (Village_currentInfoWindow) {
+                    Village_currentInfoWindow.close();
+                }
+
+                Bisan_infoWindow = new google.maps.InfoWindow({
+                    content: Bisan_markerData[index].title          
+                });
+
+                map.setZoom(16);
+                map.setCenter(marker.getPosition());
+                Bisan_infoWindow.open(map, marker);
+                Village_currentInfoWindow = Bisan_infoWindow;
+            }
+        });
+    }
+}
+
+
+
+  			Tubas_markerData.forEach((Tubas_markers, index) => {
+    		let TubasnewMarker = new google.maps.Marker({	
+      		position: new google.maps.LatLng(Tubas_markers.lat, Tubas_markers.lng),
+			icon: TubasMarkerColor,
+      		map: null,
+    		});
+
+    
+
+    		TubasnewMarker.addListener('click', () => {
+
+    		if (Village_currentInfoWindow) {
+        	Village_currentInfoWindow.close();
+      		}
+
+	      Tubas_infoWindow = new google.maps.InfoWindow({
+    	  content: Tubas_markers.title,        
+      	});
+
+
+	      map.setZoom(16);
+    	  map.setCenter(TubasnewMarker.getPosition());
+      	  Tubas_infoWindow.open(map, TubasnewMarker);
+      	  Village_currentInfoWindow = Tubas_infoWindow;
+
+    });
+	 Tubas_markers_Cont.push(TubasnewMarker);
+  }); // end of markers in region here
+
+
+window.addEventListener('message', (event) => {
+    const data = event.data;
+    if (data && data.selectedIdofTubas) {
+        const Tubas_webClick = data.selectedIdofTubas;
+        handleTubasValue(Tubas_webClick);
+    }
+});
+
+
+function handleTubasValue(Tubasvalue) {
+    Tubasvalue = Number(Tubasvalue);
+
+    if (Tubasvalue >= 0 && Tubasvalue <= 30) {
+        Tubas_markers_Cont.forEach((marker, index) => {
+            if (index === Tubasvalue) {
+                if (Village_currentInfoWindow) {
+                    Village_currentInfoWindow.close();
+                }
+
+                Tubas_infoWindow = new google.maps.InfoWindow({
+                    content: Tubas_markerData[index].title          
+                });
+
+                map.setZoom(16);
+                map.setCenter(marker.getPosition());
+                Tubas_infoWindow.open(map, marker);
+                Village_currentInfoWindow = Tubas_infoWindow;
+            }
+        });
+    }
+}
+
+
+
+
+
+  			Jenin_markerData.forEach((Jenin_markers, index) => {
+    		let JeninnewMarker = new google.maps.Marker({	
+      		position: new google.maps.LatLng(Jenin_markers.lat, Jenin_markers.lng),
+			icon: JeninMarkerColor,
+      		map: null,
+    		});
+
+    
+
+    		JeninnewMarker.addListener('click', () => {
+
+    		if (Village_currentInfoWindow) {
+        	Village_currentInfoWindow.close();
+      		}
+
+	      Jenin_infoWindow = new google.maps.InfoWindow({
+    	  content: Jenin_markers.title,        
+      	});
+
+
+	      map.setZoom(16);
+    	  map.setCenter(JeninnewMarker.getPosition());
+      	  Jenin_infoWindow.open(map, JeninnewMarker);
+      	  Village_currentInfoWindow = Jenin_infoWindow;
+
+    });
+	 Jenin_markers_Cont.push(JeninnewMarker);
+  }); // end of markers in region here
+
+
+window.addEventListener('message', (event) => {
+    const data = event.data;
+    if (data && data.selectedIdofJenin) {
+        const Jenin_webClick = data.selectedIdofJenin;
+        handleJeninValue(Jenin_webClick);
+    }
+});
+
+
+function handleJeninValue(Jeninvalue) {
+    Jeninvalue = Number(Jeninvalue);
+
+    if (Jeninvalue >= 0 && Jeninvalue <= 72) {
+        Jenin_markers_Cont.forEach((marker, index) => {
+            if (index === Jeninvalue) {
+                if (Village_currentInfoWindow) {
+                    Village_currentInfoWindow.close();
+                }
+
+                Jenin_infoWindow = new google.maps.InfoWindow({
+                    content: Jenin_markerData[index].title          
+                });
+
+                map.setZoom(16);
+                map.setCenter(marker.getPosition());
+                Jenin_infoWindow.open(map, marker);
+                Village_currentInfoWindow = Jenin_infoWindow;
+            }
+        });
+    }
+}
+
+
+  			Tulkarm_markerData.forEach((Tulkarm_markers, index) => {
+    		let TulkarmnewMarker = new google.maps.Marker({	
+      		position: new google.maps.LatLng(Tulkarm_markers.lat, Tulkarm_markers.lng),
+			icon: TulkarmMarkerColor,
+      		map: null,
+    		});
+
+    
+
+    		TulkarmnewMarker.addListener('click', () => {
+
+    		if (Village_currentInfoWindow) {
+        	Village_currentInfoWindow.close();
+      		}
+
+	      Tulkarm_infoWindow = new google.maps.InfoWindow({
+    	  content: Tulkarm_markers.title,        
+      	});
+
+
+	      map.setZoom(16);
+    	  map.setCenter(TulkarmnewMarker.getPosition());
+      	  Tulkarm_infoWindow.open(map, TulkarmnewMarker);
+      	  Village_currentInfoWindow = Tulkarm_infoWindow;
+
+    });
+	 Tulkarm_markers_Cont.push(TulkarmnewMarker);
+  }); // end of markers in region here
+
+
+window.addEventListener('message', (event) => {
+    const data = event.data;
+    if (data && data.selectedIdofTulkarm) {
+        const Tulkarm_webClick = data.selectedIdofTulkarm;
+        handleTulkarmValue(Tulkarm_webClick);
+    }
+});
+
+
+function handleTulkarmValue(Tulkarmvalue) {
+    Tulkarmvalue = Number(Tulkarmvalue);
+
+    if (Tulkarmvalue >= 0 && Tulkarmvalue <= 30) {
+        Tulkarm_markers_Cont.forEach((marker, index) => {
+            if (index === Tulkarmvalue) {
+                if (Village_currentInfoWindow) {
+                    Village_currentInfoWindow.close();
+                }
+
+                Tulkarm_infoWindow = new google.maps.InfoWindow({
+                    content: Tulkarm_markerData[index].title          
+                });
+
+                map.setZoom(16);
+                map.setCenter(marker.getPosition());
+                Tulkarm_infoWindow.open(map, marker);
+                Village_currentInfoWindow = Tulkarm_infoWindow;
+            }
+        });
+    }
+}
+
+
+
+  			Jericho_markerData.forEach((Jericho_markers, index) => {
+    		let JerichonewMarker = new google.maps.Marker({	
+      		position: new google.maps.LatLng(Jericho_markers.lat, Jericho_markers.lng),
+			icon: JerichoMarkerColor,
+      		map: null,
+    		});
+
+    
+
+    		JerichonewMarker.addListener('click', () => {
+
+    		if (Village_currentInfoWindow) {
+        	Village_currentInfoWindow.close();
+      		}
+
+	      Jericho_infoWindow = new google.maps.InfoWindow({
+    	  content: Jericho_markers.title,        
+      	});
+
+
+	      map.setZoom(16);
+    	  map.setCenter(JerichonewMarker.getPosition());
+      	  Jericho_infoWindow.open(map, JerichonewMarker);
+      	  Village_currentInfoWindow = Jericho_infoWindow;
+
+    });
+	 Jericho_markers_Cont.push(JerichonewMarker);
+  }); // end of markers in region here
+
+
+window.addEventListener('message', (event) => {
+    const data = event.data;
+    if (data && data.selectedIdofJericho) {
+        const Jericho_webClick = data.selectedIdofJericho;
+        handleJerichoValue(Jericho_webClick);
+    }
+});
+
+
+function handleJerichoValue(Jerichovalue) {
+    Jerichovalue = Number(Jerichovalue);
+
+    if (Jerichovalue >= 0 && Jerichovalue <= 30) {
+        Tubas_markers_Cont.forEach((marker, index) => {
+            if (index === Jerichovalue) {
+                if (Village_currentInfoWindow) {
+                    Village_currentInfoWindow.close();
+                }
+
+                Jericho_infoWindow = new google.maps.InfoWindow({
+                    content: Jericho_markerData[index].title          
+                });
+
+                map.setZoom(16);
+                map.setCenter(marker.getPosition());
+                Jericho_infoWindow.open(map, marker);
+                Village_currentInfoWindow = Jericho_infoWindow;
+            }
+        });
+    }
+}
+
+
+
+  			Nablus_markerData.forEach(Nablus_markers => {
+    		let NablusnewMarker = new google.maps.Marker({	
+      		position: new google.maps.LatLng(Nablus_markers.lat, Nablus_markers.lng),
+			icon: NablusMarkerColor,
+      		map: null,
+    		});
+
+    
+
+    		NablusnewMarker.addListener('click', () => {
+
+    		if (Village_currentInfoWindow) {
+        	Village_currentInfoWindow.close();
+      		}
+
+	      Nablus_infoWindow = new google.maps.InfoWindow({
+    	  content: Nablus_markers.title,        
+      	});
+
+
+	      map.setZoom(16);
+    	  map.setCenter(NablusnewMarker.getPosition());
+      	  Nablus_infoWindow.open(map, NablusnewMarker);
+      	  Village_currentInfoWindow = Nablus_infoWindow;
+
+    });
+	 Nablus_markers_Cont.push(NablusnewMarker);
+  }); // end of markers in region here
+
+
+
+  			Qalqilya_markerData.forEach(Qalqilya_markers => {
+    		let QalqilyanewMarker = new google.maps.Marker({	
+      		position: new google.maps.LatLng(Qalqilya_markers.lat, Qalqilya_markers.lng),
+			icon: QalqilyaMarkerColor,
+      		map: null,
+    		});
+
+    
+
+    		QalqilyanewMarker.addListener('click', () => {
+
+    		if (Village_currentInfoWindow) {
+        	Village_currentInfoWindow.close();
+      		}
+
+	      Qalqilya_infoWindow = new google.maps.InfoWindow({
+    	  content: Qalqilya_markers.title,        
+      	});
+
+
+	      map.setZoom(16);
+    	  map.setCenter(QalqilyanewMarker.getPosition());
+      	  Qalqilya_infoWindow.open(map, QalqilyanewMarker);
+      	  Village_currentInfoWindow = Qalqilya_infoWindow;
+
+    });
+	 Qalqilya_markers_Cont.push(QalqilyanewMarker);
+  }); // end of markers in region here
+
+
+
+
+
+
+
+        // Function to handle messages from the iframe
+        window.addEventListener('message', (event) => {
+            // Check the origin for security reasons
+            // if (event.origin !== 'expected-origin') return;
+
+            const data = event.data;
+            if (data && data.selectedIdofSalfit) {
+                Salfit_webClick = data.selectedIdofSalfit;
+        		handleUpdatedValue(Salfit_webClick);
+            }
+        });
+
+
+
+function handleUpdatedValue(value) {
+
+
+    if (value >= 0 && value <= 12) {
+
+        Salfit_markerData.forEach((Salfit_markers, index) => {
+            let SalfitnewMarker = new google.maps.Marker({
+                position: new google.maps.LatLng(Salfit_markers.lat, Salfit_markers.lng),
+                icon: SalfitMarkerColor,
+                map: null,
+            });
+
+
+            SalfitnewMarker.addListener('click', () => {
+                if (Village_currentInfoWindow) {
+                    Village_currentInfoWindow.close();
+                }
+
+                let Salfit_infoWindow = new google.maps.InfoWindow({
+                    content: Salfit_markers.title,
+                });
+
+                map.setZoom(16);
+                map.setCenter(SalfitnewMarker.getPosition());
+                Salfit_infoWindow.open(map, SalfitnewMarker);
+                Village_currentInfoWindow = Salfit_infoWindow;
+            });
+
+            Salfit_markers_Cont.push(SalfitnewMarker);
+
+            if (index == value) {
+
+
+                if (Village_currentInfoWindow) {
+                    Village_currentInfoWindow.close();
+                }
+
+                let Salfit_infoWindow = new google.maps.InfoWindow({
+                    content: Salfit_markers.title,
+                });
+
+                map.setZoom(16);
+                map.setCenter(SalfitnewMarker.getPosition());
+                Salfit_infoWindow.open(map, SalfitnewMarker);
+                Village_currentInfoWindow = Salfit_infoWindow;
+            }
+        });
+    }
+}
+
+
+
+
+
+  			Yaffa_markerData.forEach(Yaffa_markers => {
+    		let YaffanewMarker = new google.maps.Marker({	
+      		position: new google.maps.LatLng(Yaffa_markers.lat, Yaffa_markers.lng),
+			icon: YaffaMarkerColor,
+      		map: null,
+    		});
+
+    
+
+    		YaffanewMarker.addListener('click', () => {
+
+    		if (Village_currentInfoWindow) {
+        	Village_currentInfoWindow.close();
+      		}
+
+	      Yaffa_infoWindow = new google.maps.InfoWindow({
+    	  content: Yaffa_markers.title,        
+      	});
+
+
+	      map.setZoom(16);
+    	  map.setCenter(YaffanewMarker.getPosition());
+      	  Yaffa_infoWindow.open(map, YaffanewMarker);
+      	  Village_currentInfoWindow = Yaffa_infoWindow;
+
+    });
+	 Yaffa_markers_Cont.push(YaffanewMarker);
+  }); // end of markers in region here
+
+
+
+  			Ramallah_markerData.forEach(Ramallah_markers => {
+    		let RamallahnewMarker = new google.maps.Marker({	
+      		position: new google.maps.LatLng(Ramallah_markers.lat, Ramallah_markers.lng),
+			icon: RamallahMarkerColor,
+      		map: null,
+    		});
+
+    
+
+    		RamallahnewMarker.addListener('click', () => {
+
+    		if (Village_currentInfoWindow) {
+        	Village_currentInfoWindow.close();
+      		}
+
+	      Ramallah_infoWindow = new google.maps.InfoWindow({
+    	  content: Ramallah_markers.title,        
+      	});
+
+
+	      map.setZoom(16);
+    	  map.setCenter(RamallahnewMarker.getPosition());
+      	  Ramallah_infoWindow.open(map, RamallahnewMarker);
+      	  Village_currentInfoWindow = Ramallah_infoWindow;
+
+    });
+	 Ramallah_markers_Cont.push(RamallahnewMarker);
+  }); // end of markers in region here
+
+
+
+  			Ramla_markerData.forEach(Ramla_markers => {
+    		let RamlanewMarker = new google.maps.Marker({	
+      		position: new google.maps.LatLng(Ramla_markers.lat, Ramla_markers.lng),
+			icon: RamlaMarkerColor,
+      		map: null,
+    		});
+
+    
+
+    		RamlanewMarker.addListener('click', () => {
+
+    		if (Village_currentInfoWindow) {
+        	Village_currentInfoWindow.close();
+      		}
+
+	      Ramla_infoWindow = new google.maps.InfoWindow({
+    	  content: Ramla_markers.title,        
+      	});
+
+
+	      map.setZoom(16);
+    	  map.setCenter(RamlanewMarker.getPosition());
+      	  Ramla_infoWindow.open(map, RamlanewMarker);
+      	  Village_currentInfoWindow = Ramla_infoWindow;
+
+    });
+	 Ramla_markers_Cont.push(RamlanewMarker);
+  }); // end of markers in region here
+
+
+
+  			Jerusalem_markerData.forEach(Jerusalem_markers => {
+    		let JerusalemnewMarker = new google.maps.Marker({	
+      		position: new google.maps.LatLng(Jerusalem_markers.lat, Jerusalem_markers.lng),
+			icon: JerusalemMarkerColor,
+      		map: null,
+    		});
+
+    
+
+    		JerusalemnewMarker.addListener('click', () => {
+
+    		if (Village_currentInfoWindow) {
+        	Village_currentInfoWindow.close();
+      		}
+
+	      Jerusalem_infoWindow = new google.maps.InfoWindow({
+    	  content: Jerusalem_markers.title,        
+      	});
+
+
+	      map.setZoom(16);
+    	  map.setCenter(JerusalemnewMarker.getPosition());
+      	  Jerusalem_infoWindow.open(map, JerusalemnewMarker);
+      	  Village_currentInfoWindow = Jerusalem_infoWindow;
+
+    });
+	 Jerusalem_markers_Cont.push(JerusalemnewMarker);
+  }); // end of markers in region here
+
+
+
+  			Bethlehem_markerData.forEach(Bethlehem_markers => {
+    		let BethlehemnewMarker = new google.maps.Marker({	
+      		position: new google.maps.LatLng(Bethlehem_markers.lat, Bethlehem_markers.lng),
+			icon: BethlehemMarkerColor,
+      		map: null,
+    		});
+
+    
+
+    		BethlehemnewMarker.addListener('click', () => {
+
+    		if (Village_currentInfoWindow) {
+        	Village_currentInfoWindow.close();
+      		}
+
+	      Bethlehem_infoWindow = new google.maps.InfoWindow({
+    	  content: Bethlehem_markers.title,        
+      	});
+
+
+	      map.setZoom(16);
+    	  map.setCenter(BethlehemnewMarker.getPosition());
+      	  Bethlehem_infoWindow.open(map, BethlehemnewMarker);
+      	  Village_currentInfoWindow = Bethlehem_infoWindow;
+
+    });
+	 Bethlehem_markers_Cont.push(BethlehemnewMarker);
+  }); // end of markers in region here
+
+
+
+  			Hebron_markerData.forEach(Hebron_markers => {
+    		let HebronnewMarker = new google.maps.Marker({	
+      		position: new google.maps.LatLng(Hebron_markers.lat, Hebron_markers.lng),
+			icon: HebronMarkerColor,
+      		map: null,
+    		});
+
+    
+
+    		HebronnewMarker.addListener('click', () => {
+
+    		if (Village_currentInfoWindow) {
+        	Village_currentInfoWindow.close();
+      		}
+
+	      Hebron_infoWindow = new google.maps.InfoWindow({
+    	  content: Hebron_markers.title,        
+      	});
+
+
+	      map.setZoom(16);
+    	  map.setCenter(HebronnewMarker.getPosition());
+      	  Hebron_infoWindow.open(map, HebronnewMarker);
+      	  Village_currentInfoWindow = Hebron_infoWindow;
+
+    });
+	 Hebron_markers_Cont.push(HebronnewMarker);
+  }); // end of markers in region here
+
+
+
+  			Gaza_markerData.forEach(Gaza_markers => {
+    		let GazanewMarker = new google.maps.Marker({	
+      		position: new google.maps.LatLng(Gaza_markers.lat, Gaza_markers.lng),
+			icon: GazaMarkerColor,
+      		map: null,
+    		});
+
+    
+
+    		GazanewMarker.addListener('click', () => {
+
+    		if (Village_currentInfoWindow) {
+        	Village_currentInfoWindow.close();
+      		}
+
+	      Gaza_infoWindow = new google.maps.InfoWindow({
+    	  content: Gaza_markers.title,        
+      	});
+
+
+	      map.setZoom(16);
+    	  map.setCenter(GazanewMarker.getPosition());
+      	  Gaza_infoWindow.open(map, GazanewMarker);
+      	  Village_currentInfoWindow = Gaza_infoWindow;
+
+    });
+	 Gaza_markers_Cont.push(GazanewMarker);
+  }); // end of markers in region here
+
+
+
+  			Beersheba_markerData.forEach(Beersheba_markers => {
+    		let BeershebanewMarker = new google.maps.Marker({	
+      		position: new google.maps.LatLng(Beersheba_markers.lat, Beersheba_markers.lng),
+			icon: BeershebaMarkerColor,
+      		map: null,
+    		});
+
+    
+
+    		BeershebanewMarker.addListener('click', () => {
+
+    		if (Village_currentInfoWindow) {
+        	Village_currentInfoWindow.close();
+      		}
+
+	      Beersheba_infoWindow = new google.maps.InfoWindow({
+    	  content: Beersheba_markers.title,        
+      	});
+
+
+	      map.setZoom(16);
+    	  map.setCenter(BeershebanewMarker.getPosition());
+      	  Beersheba_infoWindow.open(map, BeershebanewMarker);
+      	  Village_currentInfoWindow = Beersheba_infoWindow;
+
+    });
+	 Beersheba_markers_Cont.push(BeershebanewMarker);
+  }); // end of markers in region here
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+		//Labelling on regions  
+		marker1.setMap(map);
+		marker2.setMap(map);
+		marker3.setMap(map);
+		marker4.setMap(map);
+		marker5.setMap(map);
+		marker6.setMap(map);
+		marker7.setMap(map);
+		marker8.setMap(map);  
+		marker9.setMap(map);
+		marker10.setMap(map);
+		marker11.setMap(map);
+		marker12.setMap(map);
+		marker13.setMap(map);
+		marker14.setMap(map);
+		marker15.setMap(map);
+		marker16.setMap(map);
+		marker17.setMap(map);
+		marker18.setMap(map);
+		marker19.setMap(map);
+		marker20.setMap(map);
+		marker21.setMap(map);
+		marker22.setMap(map);
+		marker23.setMap(map);
+		marker24.setMap(map);
+
+
+
+		/*--- Fencing on the map ---*/
+        Safad_fence.setMap(map);
+        Akka_fence.setMap(map);
+        Alnasra_fence.setMap(map);
+        Haifa_fence.setMap(map);
+        Bahriatabria_fence.setMap(map);
+        Tiberias_fence.setMap(map);
+        Bisan_fence.setMap(map);
+        Tubas_fence.setMap(map);
+        Jenin_fence.setMap(map);
+        Nablus_fence.setMap(map);
+        Tulkarm_fence.setMap(map);
+        Qalqilya_fence.setMap(map);
+        Yaffa_fence.setMap(map);
+        Ramla_fence.setMap(map);
+        Lod_fence.setMap(map);
+        Salfit_fence.setMap(map);
+        Ramallah_fence.setMap(map);
+        Jericho_fence.setMap(map);
+        Jerusalem_fence.setMap(map);
+        Deadsea_fence.setMap(map);
+        Bethlehem_fence.setMap(map);
+        Hebron_fence.setMap(map);
+        Gaza_fence.setMap(map);
+        Beersheba_fence.setMap(map);
+
+
+
+
+
+
+
+
+
+
+
+
+// Add event listener to change markers when zoom changes
+google.maps.event.addListener(map, 'zoom_changed', function() {
+    var zoom = map.getZoom();
+
+    if (zoom === 8) {
+        // Update markers for zoom level 8
+        updateMarkers('14px');
+    } else if (zoom === 7) {
+        // Update markers for zoom level 7
+        updateMarkers('10px');
+    } else {
+        // Update markers for other zoom levels
+        updateMarkers('14px');
+    }
+});
+
+// Function to update markers
+function updateMarkers(fontSizeOnZoom) {
+    marker1.setMap(null);
+    marker2.setMap(null);
+    marker3.setMap(null);
+    marker5.setMap(null);
+    marker6.setMap(null);
+    marker7.setMap(null);
+    marker8.setMap(null);
+    marker9.setMap(null);
+    marker10.setMap(null);
+    marker11.setMap(null);
+    marker12.setMap(null);
+    marker13.setMap(null);
+    marker14.setMap(null);
+    marker15.setMap(null);
+    marker16.setMap(null);
+    marker17.setMap(null);
+    marker18.setMap(null);
+    marker19.setMap(null);
+    marker20.setMap(null);
+    marker21.setMap(null);
+    marker23.setMap(null);
+    marker24.setMap(null);
+    
+    marker1 = new google.maps.Marker({
+        position: Safad_Region_Title,
+        map: map,
+        icon: {
+            url: 'data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEAAAAALAAAAAABAAEAAAIBRAA7',
+            size: new google.maps.Size(1, 1),
+            anchor: new google.maps.Point(0, 0),
+        },
+        label: {
+            text: 'صفد',
+            color: '#000',
+            fontSize: fontSizeOnZoom,
+            fontWeight: 'bold',
+        }
+    });
+    
+    marker2 = new google.maps.Marker({
+        position: Akka_Region_Title,
+        map: map,
+        icon: {
+            url: 'data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEAAAAALAAAAAABAAEAAAIBRAA7',
+            size: new google.maps.Size(1, 1),
+            anchor: new google.maps.Point(0, 0),
+        },
+        label: {
+            text: 'عكا',
+            color: '#000',
+            fontSize: fontSizeOnZoom,
+            fontWeight: 'bold',
+        }
+    });
+
+
+                marker3 = new google.maps.Marker({
+                position: Tiberias_Region_Title,
+                map: map,
+                icon: {
+                    url: 'data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEAAAAALAAAAAABAAEAAAIBRAA7',
+                    size: new google.maps.Size(1, 1),
+                    anchor: new google.maps.Point(0, 0),
+                },
+                label: {
+                    text: 'طبريا',
+                    color: '#000',
+                    fontSize: fontSizeOnZoom,
+                    fontWeight: 'bold',
+                }
+            });
+
+
+		
+
+            marker5 = new google.maps.Marker({
+                position: Alnasra_Region_Title,
+                map: map,
+                icon: {
+                    url: 'data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEAAAAALAAAAAABAAEAAAIBRAA7',
+                    size: new google.maps.Size(1, 1),
+                    anchor: new google.maps.Point(0, 0),
+                },
+                label: {
+                    text: 'الناصرة',
+                    color: '#000',
+                    fontSize: fontSizeOnZoom,
+                    fontWeight: 'bold',
+                }
+            });
+
+
+		
+            marker6 = new google.maps.Marker({
+                position: Haifa_Region_Title,
+                map: map,
+                icon: {
+                    url: 'data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEAAAAALAAAAAABAAEAAAIBRAA7',
+                    size: new google.maps.Size(1, 1),
+                    anchor: new google.maps.Point(0, 0),
+                },
+                label: {
+                    text: ' حيفا ',
+                    color: '#000',
+                    fontSize: fontSizeOnZoom,
+                    fontWeight: 'bold',
+                }
+            });
+
+
+		
+            marker7 = new google.maps.Marker({
+                position: Jenin_Region_Title,
+                map: map,
+                icon: {
+                    url: 'data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEAAAAALAAAAAABAAEAAAIBRAA7',
+                    size: new google.maps.Size(1, 1),
+                    anchor: new google.maps.Point(0, 0),
+                },
+                label: {
+                    text: 'جنين',
+                    color: '#000',
+                    fontSize: fontSizeOnZoom,
+                    fontWeight: 'bold',
+                }
+            });
+
+
+		
+            marker8 = new google.maps.Marker({
+                position: Tulkarm_Region_Title,
+                map: map,
+                icon: {
+                    url: 'data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEAAAAALAAAAAABAAEAAAIBRAA7',
+                    size: new google.maps.Size(1, 1),
+                    anchor: new google.maps.Point(0, 0),
+                },
+                label: {
+                    text: 'طولكرم',
+                    color: '#000',
+                    fontSize: fontSizeOnZoom,
+                    fontWeight: 'bold',
+                }
+            });
+
+
+		
+            marker9 = new google.maps.Marker({
+                position: Bisan_Region_Title,
+                map: map,
+                icon: {
+                    url: 'data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEAAAAALAAAAAABAAEAAAIBRAA7',
+                    size: new google.maps.Size(1, 1),
+                    anchor: new google.maps.Point(0, 0),
+                },
+                label: {
+                    text: 'بيسان',
+                    color: '#000',
+                    fontSize: fontSizeOnZoom,
+                    fontWeight: 'bold',
+                }
+            });
+
+
+		
+            marker10 = new google.maps.Marker({
+                position: Tubas_Region_Title,
+                map: map,
+                icon: {
+                    url: 'data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEAAAAALAAAAAABAAEAAAIBRAA7',
+                    size: new google.maps.Size(1, 1),
+                    anchor: new google.maps.Point(0, 0),
+                },
+                label: {
+                    text: 'طوباس',
+                    color: '#000',
+                    fontSize: fontSizeOnZoom,
+                    fontWeight: 'bold',
+                }
+            });
+
+
+		
+            marker11 = new google.maps.Marker({
+                position: Nablus_Region_Title,
+                map: map,
+                icon: {
+                    url: 'data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEAAAAALAAAAAABAAEAAAIBRAA7',
+                    size: new google.maps.Size(1, 1),
+                    anchor: new google.maps.Point(0, 0),
+                },
+                label: {
+                    text: 'نابلس',
+                    color: '#000',
+                    fontSize: fontSizeOnZoom,
+                    fontWeight: 'bold',
+                }
+            });
+
+
+		
+            marker12 = new google.maps.Marker({
+                position: Qalqilya_Region_Title,
+                map: map,
+                icon: {
+                    url: 'data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEAAAAALAAAAAABAAEAAAIBRAA7',
+                    size: new google.maps.Size(1, 1),
+                    anchor: new google.maps.Point(0, 0),
+                },
+                label: {
+                    text: 'قلقيلية',
+                    color: '#000',
+                    fontSize: fontSizeOnZoom,
+                    fontWeight: 'bold',
+                }
+            });
+
+
+		
+            marker13 = new google.maps.Marker({
+                position: Salfit_Region_Title,
+                map: map,
+                icon: {
+                    url: 'data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEAAAAALAAAAAABAAEAAAIBRAA7',
+                    size: new google.maps.Size(1, 1),
+                    anchor: new google.maps.Point(0, 0),
+                },
+                label: {
+                    text: 'سلفيت',
+                    color: '#000',
+                    fontSize: fontSizeOnZoom,
+                    fontWeight: 'bold',
+                }
+            });
+
+
+		
+            marker14 = new google.maps.Marker({
+                position: Yaffa_Region_Title,
+                map: map,
+                icon: {
+                    url: 'data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEAAAAALAAAAAABAAEAAAIBRAA7',
+                    size: new google.maps.Size(1, 1),
+                    anchor: new google.maps.Point(0, 0),
+                },
+                label: {
+                    text: 'يافا',
+                    color: '#000',
+                    fontSize: fontSizeOnZoom,
+                    fontWeight: 'bold',
+                }
+            });
+
+
+		
+            marker15 = new google.maps.Marker({
+                position: Jericho_Region_Title,
+                map: map,
+                icon: {
+                    url: 'data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEAAAAALAAAAAABAAEAAAIBRAA7',
+                    size: new google.maps.Size(1, 1),
+                    anchor: new google.maps.Point(0, 0),
+                },
+                label: {
+                    text: 'أريحا',
+                    color: '#000',
+                    fontSize: fontSizeOnZoom,
+                    fontWeight: 'bold',
+                }
+            });
+
+
+		
+            marker16 = new google.maps.Marker({
+                position: Ramallah_Region_Title,
+                map: map,
+                icon: {
+                    url: 'data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEAAAAALAAAAAABAAEAAAIBRAA7',
+                    size: new google.maps.Size(1, 1),
+                    anchor: new google.maps.Point(0, 0),
+                },
+                label: {
+                    text: 'رام الله',
+                    color: '#000',
+                    fontSize: fontSizeOnZoom,
+                    fontWeight: 'bold',
+                }
+            });
+
+
+		
+            marker17 = new google.maps.Marker({
+                position: Lod_Region_Title,
+                map: map,
+                icon: {
+                    url: 'data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEAAAAALAAAAAABAAEAAAIBRAA7',
+                    size: new google.maps.Size(1, 1),
+                    anchor: new google.maps.Point(0, 0),
+                },
+                label: {
+                    text: 'اللد',
+                    color: '#000',
+                    fontSize: fontSizeOnZoom,
+                    fontWeight: 'bold',
+                }
+            });
+
+
+		
+            marker18 = new google.maps.Marker({
+                position: Ramla_Region_Title,
+                map: map,
+                icon: {
+                    url: 'data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEAAAAALAAAAAABAAEAAAIBRAA7',
+                    size: new google.maps.Size(1, 1),
+                    anchor: new google.maps.Point(0, 0),
+                },
+                label: {
+                    text: 'الرملة',
+                    color: '#000',
+                    fontSize: fontSizeOnZoom,
+                    fontWeight: 'bold',
+                }
+            });
+
+
+		
+            marker19 = new google.maps.Marker({
+                position: Jerusalem_Region_Title,
+                map: map,
+                icon: {
+                    url: 'data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEAAAAALAAAAAABAAEAAAIBRAA7',
+                    size: new google.maps.Size(1, 1),
+                    anchor: new google.maps.Point(0, 0),
+                },
+                label: {
+                    text: 'القدس',
+                    color: '#000',
+                    fontSize: fontSizeOnZoom,
+                    fontWeight: 'bold',
+                }
+            });
+
+
+		
+            marker20 = new google.maps.Marker({
+                position: Bethlehem_Region_Title,
+                map: map,
+                icon: {
+                    url: 'data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEAAAAALAAAAAABAAEAAAIBRAA7',
+                    size: new google.maps.Size(1, 1),
+                    anchor: new google.maps.Point(0, 0),
+                },
+                label: {
+                    text: 'بيت لحم',
+                    color: '#000',
+                    fontSize: fontSizeOnZoom,
+                    fontWeight: 'bold',
+                }
+            });
+
+
+		
+            marker21 = new google.maps.Marker({
+                position: Hebron_Region_Title,
+                map: map,
+                icon: {
+                    url: 'data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEAAAAALAAAAAABAAEAAAIBRAA7',
+                    size: new google.maps.Size(1, 1),
+                    anchor: new google.maps.Point(0, 0),
+                },
+                label: {
+                    text: 'الخليل',
+                    color: '#000',
+                    fontSize: fontSizeOnZoom,
+                    fontWeight: 'bold',
+                }
+            });
+
+
+		
+            marker23 = new google.maps.Marker({
+                position: Gaza_Region_Title,
+                map: map,
+                icon: {
+                    url: 'data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEAAAAALAAAAAABAAEAAAIBRAA7',
+                    size: new google.maps.Size(1, 1),
+                    anchor: new google.maps.Point(0, 0),
+                },
+                label: {
+                    text: 'غزة',
+                    color: '#000',
+                    fontSize: fontSizeOnZoom,
+                    fontWeight: 'bold',
+                }
+            });
+
+
+		
+            marker24 = new google.maps.Marker({
+                position: Beersheba_Region_Title,
+                map: map,
+                icon: {
+                    url: 'data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEAAAAALAAAAAABAAEAAAIBRAA7',
+                    size: new google.maps.Size(1, 1),
+                    anchor: new google.maps.Point(0, 0),
+                },
+                label: {
+                    text: 'بئر السبع',
+                    color: '#DDD',
+                    fontSize: fontSizeOnZoom,
+                    fontWeight: 'bold',
+                }
+            });
+}
+
+
+
+//--------------------------------------------------------------
+
+google.maps.event.addListener(map, 'zoom_changed', function() {
+    // if (map.getZoom() === 10) {
+    //     marker4.setMap(null);
+    //     marker4 = new google.maps.Marker({
+    //         position: Bahriatabria_Region_Title,
+    //         map: map,
+    //         icon: {
+    //             url: 'data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEAAAAALAAAAAABAAEAAAIBRAA7',
+    //             size: new google.maps.Size(1, 1),
+    //             anchor: new google.maps.Point(0, 0),
+    //         },
+    //         label: {
+    //             text: 'بحيرة طبريا',
+    //             color: '#000',
+    //             fontSize: '14px',
+    //             fontWeight: 'bold',
+    //         }
+    //     });
+    // }
+    if (map.getZoom() === 9) {
+        marker4.setMap(null);
+        marker4 = new google.maps.Marker({
+            position: Bahriatabria_Region_Title,
+            map: map,
+            icon: {
+                url: 'data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEAAAAALAAAAAABAAEAAAIBRAA7',
+                size: new google.maps.Size(1, 1),
+                anchor: new google.maps.Point(0, 0),
+            },
+            label: {
+                text: 'بحيرة طبريا',
+                color: '#000',
+                fontSize: '12px',
+                fontWeight: 'bold',
+            }
+        });
+    }
+    if (map.getZoom() === 8) {
+        marker4.setMap(null);
+        marker4 = new google.maps.Marker({
+            position: Bahriatabria_Region_Title,
+            map: map,
+            icon: {
+                url: 'data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEAAAAALAAAAAABAAEAAAIBRAA7',
+                size: new google.maps.Size(1, 1),
+                anchor: new google.maps.Point(0, 0),
+            },
+            label: {
+                text: 'بحيرة طبريا',
+                color: '#000',
+                fontSize: '7px',
+                fontWeight: 'bold',
+            }
+        });
+    }
+    if (map.getZoom() === 7) {
+        marker4.setMap(null);
+        marker4 = new google.maps.Marker({
+            position: Bahriatabria_Region_Title,
+            map: map,
+            icon: {
+                url: 'data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEAAAAALAAAAAABAAEAAAIBRAA7',
+                size: new google.maps.Size(1, 1),
+                anchor: new google.maps.Point(0, 0),
+            },
+            label: {
+                text: 'بحيرة طبريا',
+                color: '#000',
+                fontSize: '3px',
+                fontWeight: 'bold',
+            }
+        });
+    } 
+});
+
+
+
+google.maps.event.addListener(map, 'zoom_changed', function() {
+    // if (map.getZoom() === 10) {
+    //     marker22.setMap(null);
+    //     marker22 = new google.maps.Marker({
+    //         position: Deadsea_Region_Title,
+    //         map: map,
+    //         icon: {
+    //             url: 'data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEAAAAALAAAAAABAAEAAAIBRAA7',
+    //             size: new google.maps.Size(1, 1),
+    //             anchor: new google.maps.Point(0, 0),
+    //         },
+    //         label: {
+    //             text: 'البحر الميت',
+    //             color: '#000',
+    //             fontSize: '14px',
+    //             fontWeight: 'bold',
+    //         }
+    //     });
+    // }
+    if (map.getZoom() === 9) {
+        marker22.setMap(null);
+        marker22 = new google.maps.Marker({
+            position: Deadsea_Region_Title,
+            map: map,
+            icon: {
+                url: 'data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEAAAAALAAAAAABAAEAAAIBRAA7',
+                size: new google.maps.Size(1, 1),
+                anchor: new google.maps.Point(0, 0),
+            },
+            label: {
+                text: 'البحر الميت',
+                color: '#000',
+                fontSize: '12px',
+                fontWeight: 'bold',
+            }
+        });
+    }
+    if (map.getZoom() === 8) {
+        marker22.setMap(null);
+        marker22 = new google.maps.Marker({
+            position: Deadsea_Region_Title,
+            map: map,
+            icon: {
+                url: 'data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEAAAAALAAAAAABAAEAAAIBRAA7',
+                size: new google.maps.Size(1, 1),
+                anchor: new google.maps.Point(0, 0),
+            },
+            label: {
+                text: 'البحر الميت',
+                color: '#000',
+                fontSize: '9px',
+                fontWeight: 'bold',
+            }
+        });
+    }
+    if (map.getZoom() === 7) {
+        marker22.setMap(null);
+        marker22 = new google.maps.Marker({
+            position: Deadsea_Region_Title,
+            map: map,
+            icon: {
+                url: 'data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEAAAAALAAAAAABAAEAAAIBRAA7',
+                size: new google.maps.Size(1, 1),
+                anchor: new google.maps.Point(0, 0),
+            },
+            label: {
+                text: 'البحر الميت',
+                color: '#000',
+                fontSize: '5px',
+                fontWeight: 'bold',
+            }
+        });
+    } 
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+google.maps.event.addListener(map, 'zoom_changed', function() {
+    var zoomLevel = map.getZoom();
+    if (zoomLevel >= 10) {
+        Safad_fence.setMap(null);
+        Akka_fence.setMap(null);
+        Alnasra_fence.setMap(null);
+        Haifa_fence.setMap(null);
+        Bahriatabria_fence.setMap(null);
+        Tiberias_fence.setMap(null);
+        Bisan_fence.setMap(null);
+        Tubas_fence.setMap(null);
+        Jenin_fence.setMap(null);
+        Nablus_fence.setMap(null);
+        Tulkarm_fence.setMap(null);
+        Qalqilya_fence.setMap(null);
+        Yaffa_fence.setMap(null);
+        Ramla_fence.setMap(null);
+        Lod_fence.setMap(null);
+        Salfit_fence.setMap(null);
+        Ramallah_fence.setMap(null);
+        Jericho_fence.setMap(null);
+        Jerusalem_fence.setMap(null);
+        Deadsea_fence.setMap(null);
+        Bethlehem_fence.setMap(null);
+        Hebron_fence.setMap(null);
+        Gaza_fence.setMap(null);
+        Beersheba_fence.setMap(null);
+
+
+
+        //Markers in each regions
+        Safad_markers_Cont.forEach(marker => marker.setMap(map));
+        Akka_markers_Cont.forEach(marker => marker.setMap(map));
+        Tiberias_markers_Cont.forEach(marker => marker.setMap(map));
+        Nazareth_markers_Cont.forEach(marker => marker.setMap(map));
+        Haifa_markers_Cont.forEach(marker => marker.setMap(map));
+        Bisan_markers_Cont.forEach(marker => marker.setMap(map));
+        Tubas_markers_Cont.forEach(marker => marker.setMap(map));
+        Jenin_markers_Cont.forEach(marker => marker.setMap(map));
+        Tulkarm_markers_Cont.forEach(marker => marker.setMap(map));
+        Jericho_markers_Cont.forEach(marker => marker.setMap(map));
+        Nablus_markers_Cont.forEach(marker => marker.setMap(map));
+        Qalqilya_markers_Cont.forEach(marker => marker.setMap(map));
+        Salfit_markers_Cont.forEach(marker => marker.setMap(map));
+        Yaffa_markers_Cont.forEach(marker => marker.setMap(map));
+        Ramallah_markers_Cont.forEach(marker => marker.setMap(map));
+        Ramla_markers_Cont.forEach(marker => marker.setMap(map));
+        Jerusalem_markers_Cont.forEach(marker => marker.setMap(map));
+        Bethlehem_markers_Cont.forEach(marker => marker.setMap(map));
+        Hebron_markers_Cont.forEach(marker => marker.setMap(map));
+        Gaza_markers_Cont.forEach(marker => marker.setMap(map));
+        Beersheba_markers_Cont.forEach(marker => marker.setMap(map));
+
+
+
+
+        //Markers(label) on each regions
+        marker1.setMap(null);
+		marker2.setMap(null);
+		marker3.setMap(null);
+		marker4.setMap(null);
+		marker5.setMap(null);
+		marker6.setMap(null);
+		marker7.setMap(null);
+		marker8.setMap(null);  
+		marker9.setMap(null);
+		marker10.setMap(null);
+		marker11.setMap(null);
+		marker12.setMap(null);
+		marker13.setMap(null);
+		marker14.setMap(null);
+		marker15.setMap(null);
+		marker16.setMap(null);
+		marker17.setMap(null);
+		marker18.setMap(null);
+		marker19.setMap(null);
+		marker20.setMap(null);
+		marker21.setMap(null);
+		marker22.setMap(null);
+		marker23.setMap(null);
+		marker24.setMap(null);
+    } else {
+        Safad_fence.setMap(map);
+        Akka_fence.setMap(map);
+        Alnasra_fence.setMap(map);
+        Haifa_fence.setMap(map);
+        Bahriatabria_fence.setMap(map);
+        Tiberias_fence.setMap(map);
+        Bisan_fence.setMap(map);
+        Tubas_fence.setMap(map);
+        Jenin_fence.setMap(map);
+        Nablus_fence.setMap(map);
+        Tulkarm_fence.setMap(map);
+        Qalqilya_fence.setMap(map);
+        Yaffa_fence.setMap(map);
+        Ramla_fence.setMap(map);
+        Lod_fence.setMap(map);
+        Salfit_fence.setMap(map);
+        Ramallah_fence.setMap(map);
+        Jericho_fence.setMap(map);
+        Jerusalem_fence.setMap(map);
+        Deadsea_fence.setMap(map);
+        Bethlehem_fence.setMap(map);
+        Hebron_fence.setMap(map);
+        Gaza_fence.setMap(map);
+        Beersheba_fence.setMap(map);
+
+
+
+        //Markers in each regions
+        Safad_markers_Cont.forEach(marker => marker.setMap(null));
+        Akka_markers_Cont.forEach(marker => marker.setMap(null));
+        Tiberias_markers_Cont.forEach(marker => marker.setMap(null));
+        Nazareth_markers_Cont.forEach(marker => marker.setMap(null));
+        Haifa_markers_Cont.forEach(marker => marker.setMap(null));
+        Bisan_markers_Cont.forEach(marker => marker.setMap(null));
+        Tubas_markers_Cont.forEach(marker => marker.setMap(null));
+        Jenin_markers_Cont.forEach(marker => marker.setMap(null));
+        Tulkarm_markers_Cont.forEach(marker => marker.setMap(null));
+        Jericho_markers_Cont.forEach(marker => marker.setMap(null));
+        Nablus_markers_Cont.forEach(marker => marker.setMap(null));
+        Qalqilya_markers_Cont.forEach(marker => marker.setMap(null));
+        Salfit_markers_Cont.forEach(marker => marker.setMap(null));
+        Yaffa_markers_Cont.forEach(marker => marker.setMap(null));
+        Ramallah_markers_Cont.forEach(marker => marker.setMap(null));
+        Ramla_markers_Cont.forEach(marker => marker.setMap(null));
+        Jerusalem_markers_Cont.forEach(marker => marker.setMap(null));
+        Bethlehem_markers_Cont.forEach(marker => marker.setMap(null));
+        Hebron_markers_Cont.forEach(marker => marker.setMap(null));
+        Gaza_markers_Cont.forEach(marker => marker.setMap(null));
+        Beersheba_markers_Cont.forEach(marker => marker.setMap(null));
+
+
+
+        //Markers(label) on each regions
+        marker1.setMap(map);
+		marker2.setMap(map);
+		marker3.setMap(map);
+		marker4.setMap(map);
+		marker5.setMap(map);
+		marker6.setMap(map);
+		marker7.setMap(map);
+		marker8.setMap(map);  
+		marker9.setMap(map);
+		marker10.setMap(map);
+		marker11.setMap(map);
+		marker12.setMap(map);
+		marker13.setMap(map);
+		marker14.setMap(map);
+		marker15.setMap(map);
+		marker16.setMap(map);
+		marker17.setMap(map);
+		marker18.setMap(map);
+		marker19.setMap(map);
+		marker20.setMap(map);
+		marker21.setMap(map);
+		marker22.setMap(map);
+		marker23.setMap(map);
+		marker24.setMap(map);
+
+
+
+        // Check if infoWindow is defined before trying to open
+        if (Safad_infoWindow) {
+            Safad_infoWindow.open(null); // Close the infoWindow if it's open
+        }
+
+
+
+    }
+
+
+
+});//zoom_changed ends here
+	
+	  
+
+
+
+
+            
+
+}//end of main function
+
+
+</script>
+
+
+<script type="text/javascript">
+/*-----Polygons Adding Starts Here-----*/
+</script>
+<script src="polygon/safad_polygon.js"></script>
+<script src="polygon/akka_polygon.js"></script>
+<script src="polygon/alnasra_polygon.js"></script>
+<script src="polygon/haifa_polygon.js"></script>
+<script src="polygon/bahriatabria_polygon.js"></script>
+<script src="polygon/tiberias_polygon.js"></script>
+<script src="polygon/bisan_polygon.js"></script>
+<script src="polygon/tubas_polygon.js"></script>
+<script src="polygon/jenin_polygon.js"></script>
+<script src="polygon/nablus_polygon.js"></script>
+<script src="polygon/tulkarm_polygon.js"></script>
+<script src="polygon/qalqilya_polygon.js"></script>
+<script src="polygon/yaffa_polygon.js"></script>
+<script src="polygon/ramla_polygon.js"></script>
+<script src="polygon/lod_polygon.js"></script>
+<script src="polygon/salfit_polygon.js"></script>
+<script src="polygon/ramallah_polygon.js"></script>
+<script src="polygon/jericho_polygon.js"></script>
+<script src="polygon/jerusalem_polygon.js"></script>
+<script src="polygon/deadsea_polygon.js"></script>
+<script src="polygon/bethlehem_polygon.js"></script>
+<script src="polygon/hebron_polygon.js"></script>
+<script src="polygon/gaza_polygon.js"></script>
+<script src="polygon/beersheba_polygon.js"></script>
+
+
+
+<script src="mouseoverandout/mouseoverandout.js"></script>
+
+<script src="clickeventsonregions/clickeventsonregions.js"></script>
+
+
+
+
+<script type="text/javascript">
+/*-----Markers Adding Starts Here-----*/
+</script>
+<script src="markers/safad_markers.js"></script>
+<script src="markers/akka_markers.js"></script>
+<script src="markers/tiberias_markers.js"></script>
+<script src="markers/nazareth_markers.js"></script>
+<script src="markers/haifa_markers.js"></script>
+<script src="markers/bisan_markers.js"></script>
+<script src="markers/tubas_markers.js"></script>
+<script src="markers/jenin_markers.js"></script>
+<script src="markers/tulkarm_markers.js"></script>
+<script src="markers/jericho_markers.js"></script>
+<script src="markers/nablus_markers.js"></script>
+<script src="markers/qalqilya_markers.js"></script>
+<script src="markers/salfit_markers.js"></script>
+<script src="markers/yaffa_markers.js"></script>
+<script src="markers/ramallah_markers.js"></script>
+<script src="markers/ramla_markers.js"></script>
+<script src="markers/jerusalem_markers.js"></script>
+<script src="markers/bethlehem_markers.js"></script>
+<script src="markers/hebron_markers.js"></script>
+<script src="markers/gaza_markers.js"></script>
+<script src="markers/beersheba_markers.js"></script>
+
+        </body>
+            </html>

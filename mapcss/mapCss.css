@@ -1,0 +1,126 @@
+       html,
+        body {
+            height: 100%;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+  	    }
+
+
+
+    	.links-wrap div a {
+    		text-decoration: none;
+    		height: 37px;
+    		color: #3e413f;
+    		display: block;
+    		margin: 10px 0; 
+    	    position: relative;
+	    	box-shadow: 0 5px 10px 0 rgb(0 0 0 / 25%);   
+    		background-color: white;
+	    	border-left: 3px solid #e7c932;
+    		border-radius: 2px;
+    	}
+
+
+    	.links-wrap a span {
+    		display: block;
+    		position: absolute;
+    		width: 94%;
+    		height: 100%;
+    		border: none;
+    		font-size: 16px;
+    		cursor: pointer;
+		    overflow: hidden;
+	    	text-wrap: nowrap;
+    		padding: 6px 12px 12px 6px;
+    		transition: all 0.3s ease-in-out;
+    		line-height: 20px;
+            font-weight: bold;
+    	}
+
+    	.links-wrap a span:hover {
+    		overflow: visible;
+    		width: max-content;
+    		z-index: 999;
+    		background-color: #e7c932;
+	    	border-radius: 2px;
+    	}
+
+    	.links-wrap a:not(.lf-to-rt):hover {
+    		background-color: #e7c932;
+    		color: #fff;
+    	}
+    	.links-wrap {
+	    	max-height: 100vh; /* Set a maximum height */
+    		overflow-y: auto; /* Adds vertical scroll if content overflows */
+		}
+		::-webkit-scrollbar {
+			width: 6px;
+			height: 8px;
+		}
+        .links-wrap {
+
+            direction: rtl;
+            text-align: right;
+        }
+
+		::-webkit-scrollbar-thumb {
+			background-color: orange;
+			border-radius: 20px;
+		}
+		::-webkit-scrollbar-track {
+ 		   background: #f1f1f1; /* Color of the track (background) */
+		}
+
+        .container-fluid {
+            height: 100vh;
+        }
+
+
+
+        .half-width {
+            background-color: Gainsboro; /* Just for visual distinction */
+            height: 100vh; /* Set a height for demonstration */
+            position: relative; /* Ensure relative positioning for absolute children */
+        }
+
+        .iframe-container {
+            height: 100vh; /* Full viewport height or adjust as needed */
+            border: none;
+            padding: 0;
+        }
+
+        #map {
+            margin: 0;
+            width: 100%; /* Take full width of the parent column */
+            height: 100%; /* Take full height of the parent column */
+            position: absolute; /* Positioned within the column */
+            top: 0;
+            left: 0;
+            background-color: #f0f0f0; /* Just for visual distinction */
+        }
+        
+        .links-wrap div .lf-to-rt {
+            direction: ltr;
+            text-align: left;
+            box-shadow: none;
+            border-left: none;
+            margin-bottom: 0;
+        }
+        .links-wrap div .lf-to-rt:hover {
+            cursor: context-menu;
+        }
+
+        .links-wrap div a i {
+            font-size:24px;
+            border: 1px solid black;
+            border-radius: 50%;
+            padding: 2px;
+        }
+
+        .links-wrap div a i:hover {
+            background-color: #e7c932;
+            cursor: pointer;
+            color: white;
+        }
